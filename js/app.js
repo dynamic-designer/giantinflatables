@@ -45,7 +45,7 @@
             $('.productItem-slider').slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                infinite: true,
+                infinite: false,
                 dots: false,
                 arrows: true,
                 prevArrow: '<div class="slick-prev slick-btn"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
@@ -58,7 +58,7 @@
                 })
                 .slick({
                     draggable: false,
-                    infinite: true,
+                    infinite: false,
                     variableWidth: true,
                     slidesToShow: 6,
                     dots: false,
@@ -151,6 +151,14 @@
 
         //Feather Icon Init
         feather.replace();
+
+        $(".click-to-scrollDown").click(function() {
+            var headerHeight = $(".theme-header").outerHeight();
+            var heroSliderHeight = $(".hero-slider-wrapper").outerHeight();
+            $('html, body').animate({
+                scrollTop: $(".click-to-scrollDown").offset().top-108
+            }, 200);
+        });
     });
 
 
