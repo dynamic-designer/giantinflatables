@@ -1,7 +1,7 @@
 (function($) {
 
     "use strict";
-    
+
     /*------------------------------------------
         = FUNCTIONS
     -------------------------------------------*/
@@ -153,8 +153,6 @@
         feather.replace();
 
         $(".click-to-scrollDown").click(function() {
-            var headerHeight = $(".theme-header").outerHeight();
-            var heroSliderHeight = $(".hero-slider-wrapper").outerHeight();
             $('html, body').animate({
                 scrollTop: $(".click-to-scrollDown").offset().top-108
             }, 200);
@@ -177,7 +175,5 @@
     $(window).on("resize", function() {
 
     });
-
-
 
 })(window.jQuery);
