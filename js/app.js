@@ -113,6 +113,18 @@
             });
         }
     }
+    function caseStudiesSlider() {
+        if ($(".caseStudies-slider").length) {
+            $(".caseStudies-slider").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true ,
+                infinite: true,
+                arrows: false,
+                dots: false
+            });
+        }
+    }
     
 
     // Parallax background
@@ -148,6 +160,8 @@
 
         updateVerticalSlider();
         updateHorizontalSlider();
+
+        caseStudiesSlider();
 
         //Feather Icon Init
         feather.replace();
