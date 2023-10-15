@@ -38,8 +38,8 @@
 
 <body>
   <div class="page-wrapper">
-    <header class="theme-header fixed-top">
-      <div class="header-topbar" style="height: 120px;">
+    <header class="theme-header">
+      <div class="header-topbar">
         <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col col-sm-4">
@@ -87,10 +87,10 @@
               <div class="offcanvas-body d-block">
                 <ul class="navbar-nav flex-column">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="about.html">About</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Our Products</a>
@@ -99,13 +99,13 @@
                     <a class="nav-link" href="#">Brochures</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Updates</a>
+                    <a class="nav-link" href="updates.html">Updates</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Case Studies</a>
+                    <a class="nav-link" href="case-studies.html">Case Studies</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="contact.html">Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -117,10 +117,10 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-sm-2">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Our Products</a>
@@ -129,13 +129,13 @@
                   <a class="nav-link" href="#">Brochures</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Updates</a>
+                  <a class="nav-link" href="updates.html">Updates</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Case Studies</a>
+                  <a class="nav-link" href="case-studies.html">Case Studies</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
               </ul>
               <form class="d-flex" role="search">
@@ -207,12 +207,12 @@
           </div>
         </div>
       </div>
-      <a href="javascript:void(0)" class="click-to-scrollDown">
+      <a href="#home" class="click-to-scrollDown">
         <div class="scroll-down"></div>
       </a>
     </section>
 
-    <section class="section-box">
+    <section class="section-box" id="home">
       <div class="container container-large">
         <div class="row has-connectBlock">
           <div class="col col-md-8 is-fluidBlock">
@@ -222,7 +222,9 @@
             </div>
             <div class="row">
               <div class="col col-sm-5">
-                <img class="img-fluid rounded" src="images/img-1.jpg" />
+                <div class="image-animation--wrapper">
+                  <img class="img-fluid rounded" src="images/img-1.jpg" />
+                </div>
               </div>
               <div class="col col-sm-7">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
@@ -237,7 +239,7 @@
             </div>
           </div>
           <div class="col col-sm-4 is-connectBlock">
-            <div class="connect-block">
+            <div class="connect-block wow swing">
               <div class="card card-master">
                 <div class="card-header">
                   <div class="d-flex">
@@ -344,7 +346,7 @@
             </div>
           </div>
           <div class="productItem-slider is-animated-slider">
-            <div class="slide">
+            <div class="slide image-animation--wrapper">
               <img src="images/slider/slide-1.jpg" alt class="slider-bg">
               <div class="text-container">
                 <div class="slide-caption">
@@ -360,7 +362,7 @@
                 </div>
               </div>
             </div>
-            <div class="slide">
+            <div class="slide image-animation--wrapper">
               <img src="images/slider/slide-2.jpg" alt class="slider-bg">
               <div class="text-container">
                 <div class="slide-caption">
@@ -376,7 +378,7 @@
                 </div>
               </div>
             </div>
-            <div class="slide">
+            <div class="slide image-animation--wrapper">
               <img src="images/slider/slide-3.jpg" alt class="slider-bg">
               <div class="text-container">
                 <div class="slide-caption">
@@ -392,7 +394,7 @@
                 </div>
               </div>
             </div>
-            <div class="slide">
+            <div class="slide image-animation--wrapper">
               <img src="images/slider/slide-1.jpg" alt class="slider-bg">
               <div class="text-container">
                 <div class="slide-caption">
@@ -408,7 +410,7 @@
                 </div>
               </div>
             </div>
-            <div class="slide">
+            <div class="slide image-animation--wrapper">
               <img src="images/slider/slide-2.jpg" alt class="slider-bg">
               <div class="text-container">
                 <div class="slide-caption">
@@ -424,7 +426,7 @@
                 </div>
               </div>
             </div>
-            <div class="slide">
+            <div class="slide image-animation--wrapper">
               <img src="images/slider/slide-3.jpg" alt class="slider-bg">
               <div class="text-container">
                 <div class="slide-caption">
@@ -440,7 +442,7 @@
                 </div>
               </div>
             </div>
-            <div class="slide">
+            <div class="slide image-animation--wrapper">
               <img src="images/slider/slide-1.jpg" alt class="slider-bg">
               <div class="text-container">
                 <div class="slide-caption">
@@ -456,7 +458,7 @@
                 </div>
               </div>
             </div>
-            <div class="slide">
+            <div class="slide image-animation--wrapper">
               <img src="images/slider/slide-2.jpg" alt class="slider-bg">
               <div class="text-container">
                 <div class="slide-caption">
@@ -573,7 +575,7 @@
           </div>
           <div class="col col-sm-9">
             <div class="updateHorizontal-slider is-animated-slider">
-              <div class="slide">
+              <div class="slide image-animation--wrapper">
                 <img src="images/img-1.jpg" alt class="slider-bg">
                 <div class="text-container">
                   <div class="slide-caption">
@@ -589,7 +591,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slide">
+              <div class="slide image-animation--wrapper">
                 <img src="images/img-2.jpg" alt class="slider-bg">
                 <div class="text-container">
                   <div class="slide-caption">
@@ -605,7 +607,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slide">
+              <div class="slide image-animation--wrapper">
                 <img src="images/img-3.jpg" alt class="slider-bg">
                 <div class="text-container">
                   <div class="slide-caption">
@@ -644,7 +646,9 @@
           <div class="slide">
             <div class="row">
               <div class="col col-sm-5">
-                <img class="img-fluid rounded" src="images/img-1.jpg" height="30vh" />
+                <div class="image-animation--wrapper">
+                  <img class="img-fluid rounded" src="images/img-1.jpg" height="30vh" />
+                </div>
               </div>
               <div class="col col-sm-7">
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h4>
@@ -661,7 +665,9 @@
           <div class="slide">
             <div class="row">
               <div class="col col-sm-5">
-                <img class="img-fluid rounded" src="images/img-1.jpg" height="30vh" />
+                <div class="image-animation--wrapper">
+                  <img class="img-fluid rounded" src="images/img-1.jpg" height="30vh" />
+                </div>
               </div>
               <div class="col col-sm-7">
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h4>
@@ -678,7 +684,9 @@
           <div class="slide">
             <div class="row">
               <div class="col col-sm-5">
-                <img class="img-fluid rounded" src="images/img-1.jpg" height="30vh" />
+                <div class="image-animation--wrapper">
+                  <img class="img-fluid rounded" src="images/img-1.jpg" height="30vh" />
+                </div>
               </div>
               <div class="col col-sm-7">
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h4>
@@ -700,7 +708,7 @@
       <div class="container container-large">
         <div class="row">
           <div class="col col-sm-4">
-            <div class="info-block h-100">
+            <div class="info-block wow zoomIn h-100">
               <div class="card card-master h-100">
                 <div class="card-header">
                   <div class="d-flex align-items-center">
@@ -719,7 +727,7 @@
             </div>
           </div>
           <div class="col col-sm-4">
-            <div class="info-block h-100">
+            <div class="info-block wow zoomIn h-100">
               <div class="card card-master h-100">
                 <div class="card-header">
                   <div class="d-flex align-items-center">
@@ -754,7 +762,7 @@
             </div>
           </div>
           <div class="col col-sm-4">
-            <div class="connect-block">
+            <div class="connect-block wow zoomIn">
               <div class="card card-master">
                 <div class="card-header">
                   <div class="d-flex">
@@ -878,18 +886,18 @@
           <div class="row align-items-end">
             <div class="col col-sm-3">
               <h5 class="text-light">This website is powered by:</h5>
-              <img src="images/logo.png" width="300" />
+              <img class="img-md" src="images/logo.png" />
             </div>
             <div class="col col-sm-6 text-center">
               <h4 class="text-white">A Vanture of</h4>
-              <img src="images/logo.png" width="350" />
+              <img class="img-lg" src="images/logo.png" />
               <h5 class="text-light text-uppercase my-3">Giant Inflatable India</h5>
-              <img src="images/logo.png" width="100" class="my-3" />
-              <h4 class="text-white">&copy; Copyrights.</h4>
+              <img cl src="images/logo.png" class="img-sm my-3" />
+              <h4 class="text-white m-0">&copy; Copyrights.</h4>
             </div>
             <div class="col col-sm-3 text-end">
               <h5 class="text-light">SEO-SEM-SMM-PCC By:</h5>
-              <img src="images/logo.png" width="300" />
+              <img class="img-md" src="images/logo.png" />
             </div>
           </div>
         </div>
@@ -897,14 +905,53 @@
     </footer>
   </div>
 
-  <script src="js/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery-plugin-collection.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="https://unpkg.com/feather-icons"></script>
 
   <!-- Custom script for this template -->
   <script src="js/app.js"></script>
+  <script>
+    $(document).ready(function(){
+    
+      new WOW().init();
+
+      var didScroll;
+      var lastScrollTop = 0;
+      var delta = 5;
+      var headerHeight = $('header').outerHeight();
+      var topNavHeight = $('.header-topbar').outerHeight();
+      var headerMainHeight = $('.header-navbar').outerHeight();
+      $(window).scroll(function(event){
+          didScroll = true;
+      });
+      setInterval(function() {
+          if (didScroll) {hasScrolled();didScroll = false;}
+      }, 250);
+      function hasScrolled() {
+          var st = $(this).scrollTop();
+          if(Math.abs(lastScrollTop - st) <= delta)
+              return;
+          if (st > lastScrollTop && st > headerHeight){
+              // Scroll Down
+              $('header').removeClass('fixed-down').addClass('fixed-up');
+              $('.fixed-up').css('top', -(topNavHeight + headerMainHeight));
+          } else {
+              // Scroll Up
+              $('.fixed-up').css('top', '0');
+              if(st + $(window).height() < $(document).height()) {
+                  $('header').removeClass('fixed-up').addClass('fixed-down');
+              }
+          }
+          lastScrollTop = st;
+      };
+      $('body').css('padding-top', headerHeight);
+
+    })
+  </script>
 </body>
 
 </html>

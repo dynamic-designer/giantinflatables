@@ -146,6 +146,22 @@
         }
     }
 
+    // Scrolling Animation
+    $.fn.visible = function(partial) {
+    
+        var $t            = $(this),
+            $w            = $(window),
+            viewTop       = $w.scrollTop(),
+            viewBottom    = viewTop + $w.height(),
+            _top          = $t.offset().top,
+            _bottom       = _top + $t.height(),
+            compareTop    = partial === true ? _bottom : _top,
+            compareBottom = partial === true ? _top : _bottom;
+      
+      return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+  
+    };
+
 
     /*==========================================================================
         WHEN DOCUMENT LOADING 
@@ -166,11 +182,10 @@
         //Feather Icon Init
         feather.replace();
 
-        $(".click-to-scrollDown").click(function() {
-            $('html, body').animate({
-                scrollTop: $(".click-to-scrollDown").offset().top-108
-            }, 200);
-        });
+        var windowHeight = $(window).outerHeight()
+        var headerHeight = $('header').outerHeight();
+        $(".hero-slider-wrapper").css("height", (windowHeight - headerHeight)+"px")
+
     });
 
 
@@ -179,7 +194,19 @@
         WHEN WINDOW SCROLL
     ==========================================================================*/
     $(window).on("scroll", function() {
+        var myOffcanvas = document.getElementById('offcanvasWithBothOptions') ;
+        var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
+
         bgParallax();
+
+        $(".image-animation--wrapper").each(function(i, el) {
+            var el = $(el);
+            if (el.visible(true)) {
+              el.addClass("show"); 
+            } 
+        });
+
+        bsOffcanvas.hide();
     });
 
     
