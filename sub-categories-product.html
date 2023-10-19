@@ -38,8 +38,8 @@
 
 <body>
   <div class="page-wrapper">
-    <header class="theme-header fixed-top">
-      <div class="header-topbar" style="height: 120px;">
+    <header class="theme-header">
+      <div class="header-topbar">
         <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col col-sm-4">
@@ -80,32 +80,32 @@
       <div class="header-navbar">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <button class="btn btn-dark slidingMenu type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
               <i data-feather="menu"></i>
             </button>
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
               <div class="offcanvas-body d-block">
                 <ul class="navbar-nav flex-column">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="about.html">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Our Products</a>
+                    <a class="nav-link active" href="products.html">Our Products</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Brochures</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Updates</a>
+                    <a class="nav-link" href="updates.html">Updates</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Case Studies</a>
+                    <a class="nav-link" href="case-studies.html">Case Studies</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="contact.html">Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -117,25 +117,25 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-sm-2">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Our Products</a>
+                  <a class="nav-link active" href="products.html">Our Products</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Brochures</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Updates</a>
+                  <a class="nav-link" href="updates.html">Updates</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Case Studies</a>
+                  <a class="nav-link" href="case-studies.html">Case Studies</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
               </ul>
               <form class="d-flex" role="search">
@@ -150,29 +150,22 @@
       </div>
     </header>
 
-    <section class="page-title d-none">
-      <div class="background-container">
-        <div class="container container-large position-relative">
-          <div class="row">
-            <div class="col col-xs-12">
-              <h3>Sub Heading</h3>
-              <h1 class="text-uppercase"><span class="text-primary">Main Heading</span><br>Continue</h1>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section class="page-title">
       <div class="breadcrumb-container py-2">
-        <div class="container container-large">
+        <div class="container container-extraLarge">
           <div class="row">
             <div class="col col-xs-12">
               <div class="d-flex align-items-center">
                 <ol class="breadcrumb m-0">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a class="text-primary">About us</a></li>
+                  <li><a href="index.html"><i data-feather="home"></i> Home</a></li>
+                  <li><a href="products.html">Industrial Inflatable Products</a></li>
+                  <li><a class="text-primary">Industrial Pipe Plug</a></li>
                 </ol>
-                <a href="#" class="btn btn-primary btn-withIcon ms-auto">
+                <a href="#" class="btn btn-secondary btn-withIcon ms-auto">
                   Back
-                  <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+                  <span class="icon">
+                    <i data-feather="chevron-right"></i>
+                  </span>
                 </a>
               </div>
             </div>
@@ -181,35 +174,496 @@
       </div>
     </section>
 
-    <section class="section-box d-none">
+    <section class="section-box">
       <div class="container container-extraLarge">
-        <div class="row has-connectBlock">
-          <div class="col col-md-8 is-fluidBlock">
-            <div class="row">
-              <div class="col-12 mb-5">
-                <div class="info-block h-100">
-                  <div class="card card-master h-100">
-                    <div class="card-header ps-4">
-                      <div class="d-flex align-items-center">
-                        <div class="flex-grow-1 ms-2">
-                          <h4>Heading</h4>
-                        </div>
+        <div class="d-flex">
+          <div class="section-title mb-2">
+            <h2>Industrial <span>Inflatable</span> Products</h2>
+          </div>
+          <div class="ms-auto">
+            <a href="#" class="btn btn-secondary btn-withIcon">
+              Main Categories
+              <span class="icon">
+                <i data-feather="chevron-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="product-slider mb-5">
+          <div class="productNavbarOnly-slider navbar-nav mb-3">
+            <div class="nav-item is-active">
+              <a class="nav-link">Product Category 1</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link">Product Category 2</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link">Product Category 3</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link">Product Category 4</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link">Product Category 5</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link">Product Category 6</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link">Product Category 7</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link">Product Category 8</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link">Product Category 9</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link">Product Category 10</a>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="section-title is-center mb-2">
+          <h2>Industrial <span>Pipe Plug</span> Solution</h2>
+        </div>
+
+        <div class="product-slider mb-5">
+          <div class="productNavbarOnly-slider is-capsuleUI navbar-nav mb-3">
+            <div class="nav-item is-active">
+              <a class="nav-link">Sub Product 1</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link">Sub Product 2</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link">Sub Product 3</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link">Sub Product 4</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link">Sub Product 5</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link">Sub Product 6</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link">Sub Product 7</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link">Sub Product 8</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-gridView my-5">
+          <div class="row is-animated-slider">
+            <div class="col-sm-6 mb-4">
+              <div class="slide position-relative overflow-hidden wow zoomIn">
+                <img class="img-fluid" src="https://placehold.co/1000x600/fdca01/FFF" />
+                <div class="text-container">
+                  <div class="slide-caption">
+                    <div class="d-flex align-items-center">
+                      <h4 class="heading">Inpatient and Residential</h4>
+                      <div class="btns">
+                        <a href="product-detail.html" class="btn btn-primary btn-withIcon">
+                          View More
+                          <span class="icon"><i data-feather="chevron-right"></i></span>
+                        </a>
                       </div>
                     </div>
-                    <div class="card-body p-0">
-                      <div id="fotorama" class="fotorama" data-nav="thumbs" data-arrows="true" data-click="true" data-swipe="true"
-                      data-width="100%"
-                      data-ratio="150/75"
-                      data-loop="true">
-                      </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+              <div class="slide position-relative overflow-hidden wow zoomIn">
+                <img class="img-fluid" src="https://placehold.co/1000x600/fdca01/FFF" />
+                <div class="text-container">
+                  <div class="slide-caption">
+                    <div class="d-flex align-items-center">
+                      <h4 class="heading">Inpatient and Residential</h4>
+                      <div class="btns">
+                        <a href="product-detail.html" class="btn btn-primary btn-withIcon">
+                          View More
+                          <span class="icon"><i data-feather="chevron-right"></i></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+              <div class="slide position-relative overflow-hidden wow zoomIn">
+                <img class="img-fluid" src="https://placehold.co/1000x600/fdca01/FFF" />
+                <div class="text-container">
+                  <div class="slide-caption">
+                    <div class="d-flex align-items-center">
+                      <h4 class="heading">Inpatient and Residential</h4>
+                      <div class="btns">
+                        <a href="product-detail.html" class="btn btn-primary btn-withIcon">
+                          View More
+                          <span class="icon"><i data-feather="chevron-right"></i></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+              <div class="slide position-relative overflow-hidden wow zoomIn">
+                <img class="img-fluid" src="https://placehold.co/1000x600/fdca01/FFF" />
+                <div class="text-container">
+                  <div class="slide-caption">
+                    <div class="d-flex align-items-center">
+                      <h4 class="heading">Inpatient and Residential</h4>
+                      <div class="btns">
+                        <a href="product-detail.html" class="btn btn-primary btn-withIcon">
+                          View More
+                          <span class="icon"><i data-feather="chevron-right"></i></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+              <div class="slide position-relative overflow-hidden wow zoomIn">
+                <img class="img-fluid" src="https://placehold.co/1000x600/fdca01/FFF" />
+                <div class="text-container">
+                  <div class="slide-caption">
+                    <div class="d-flex align-items-center">
+                      <h4 class="heading">Inpatient and Residential</h4>
+                      <div class="btns">
+                        <a href="product-detail.html" class="btn btn-primary btn-withIcon">
+                          View More
+                          <span class="icon"><i data-feather="chevron-right"></i></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+              <div class="slide position-relative overflow-hidden wow zoomIn">
+                <img class="img-fluid" src="https://placehold.co/1000x600/fdca01/FFF" />
+                <div class="text-container">
+                  <div class="slide-caption">
+                    <div class="d-flex align-items-center">
+                      <h4 class="heading">Inpatient and Residential</h4>
+                      <div class="btns">
+                        <a href="product-detail.html" class="btn btn-primary btn-withIcon">
+                          View More
+                          <span class="icon"><i data-feather="chevron-right"></i></span>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col col-sm-4 is-connectBlock">
-            <div class="connect-block">
+        </div>
+        <div class="product-details">
+          <div class="section-title has-noElement mb-2">
+            <h2 class="p-0">Product <span>Description</span></h2>
+          </div>
+          <div class="border border-dark-subtle rounded p-4 pb-2 text-dark wow fadeInUp">
+            <h4>Heading</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-box parallax" data-bg-image="images/slider/slide-2.jpg">
+      <div class="container container-large position-relative">
+        <div class="row">
+            <div class="col col-sm-4">
+                <div class="feature-grid wow zoomIn">
+                    <div class="icon">
+                        <i data-feather="mail"></i>
+                    </div>
+                    <div class="details">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Sed quia non numquam eius modi tempo ra incidunt ut labore et dolore magnam aliq uam quaera.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-4">
+                <div class="feature-grid wow zoomIn">
+                    <div class="icon">
+                      <i data-feather="mail"></i>
+                    </div>
+                    <div class="details">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Sed quia non numquam eius modi tempo ra incidunt ut labore et dolore magnam aliq uam quaera.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-sm-4">
+                <div class="feature-grid wow zoomIn">
+                    <div class="icon">
+                      <i data-feather="mail"></i>
+                    </div>
+                    <div class="details">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Sed quia non numquam eius modi tempo ra incidunt ut labore et dolore magnam aliq uam quaera.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="">
+          <div class="d-flex align-items-center mt-3">
+            <div class="section-title m-0">
+              <h3 class="text-primary m-0">Sed quia non numquam eius modi tempo ra incidunt ut labore et dolore magnam aliq uam quaera.</h3>
+            </div>
+            <button class="btn btn-secondary btn-withIcon ms-auto" type="submit">
+              Easy to Connect
+              <span class="icon"><i data-feather="chevron-right"></i></span>
+            </button>
+          </div>
+        </div>
+    </section>
+
+    <section class="section-box section-highlight">
+      <div class="container container-large">
+        <div class="d-flex">
+          <div class="section-title mb-2">
+            <h2>Industrial <span>Updates</span></h2>
+          </div>
+          <div class="ms-auto">
+            <a href="#" class="btn btn-secondary btn-withIcon">
+              View More
+              <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container container-large">
+        <div class="row">
+          <div class="col col-sm-3 wow bounceInLeft">
+            <div class="updateVertical-slider">
+              <div class="slide">
+                <div class="text-container">
+                  <h5>1. Sed quia non numquam eius modi tempo ra incidunt ut labore et dolore magnam aliq uam quaera.</h5>
+                  <a href="javascript:void(0)">View More</a>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="text-container">
+                  <h5>2. Sed quia non numquam eius modi tempo ra incidunt ut labore et dolore magnam aliq uam quaera.</h5>
+                  <a href="javascript:void(0)">View More</a>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="text-container">
+                  <h5>3. Sed quia non numquam eius modi tempo ra incidunt ut labore et dolore magnam aliq uam quaera.</h5>
+                  <a href="javascript:void(0)">View More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm-9 wow zoomIn">
+            <div class="updateHorizontal-slider is-animated-slider">
+              <div class="slide">
+                <img src="images/img-1.jpg" alt class="slider-bg">
+                <div class="text-container">
+                  <div class="slide-caption">
+                    <div class="d-flex align-items-end">
+                      <h4 class="heading">Inpatient and Residential</h4>
+                      <div class="btns">
+                        <a href="#" class="btn btn-secondary btn-withIcon">
+                          View More
+                          <span class="icon"><i data-feather="chevron-right"></i></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="images/img-2.jpg" alt class="slider-bg">
+                <div class="text-container">
+                  <div class="slide-caption">
+                    <div class="d-flex align-items-end">
+                      <h4 class="heading">Inpatient and Residential</h4>
+                      <div class="btns">
+                        <a href="#" class="btn btn-secondary btn-withIcon">
+                          View More
+                          <span class="icon"><i data-feather="chevron-right"></i></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="images/img-3.jpg" alt class="slider-bg">
+                <div class="text-container">
+                  <div class="slide-caption">
+                    <div class="d-flex align-items-end">
+                      <h4 class="heading">Inpatient and Residential</h4>
+                      <div class="btns">
+                        <a href="#" class="btn btn-secondary btn-withIcon">
+                          View More
+                          <span class="icon"><i data-feather="chevron-right"></i></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-box">
+      <div class="container container-large">
+        <div class="d-flex">
+          <div class="section-title mb-2">
+            <h2>Industrial <span>Case Studies</span></h2>
+          </div>
+          <div class="ms-auto">
+            <a href="#" class="btn btn-secondary btn-withIcon">
+              More Case Studies
+              <span class="icon"><i data-feather="chevron-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="caseStudies-slider">
+          <div class="slide">
+            <div class="row">
+              <div class="col col-sm-5 wow fadeInLeft">
+                <div class="">
+                  <img class="img-fluid rounded" src="images/img-1.jpg" height="30vh" />
+                </div>
+              </div>
+              <div class="col col-sm-7 wow fadeInRight">
+                <h4>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="text-end">
+                  <a href="#" class="btn btn-secondary btn-withIcon">
+                  View More
+                  <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="row">
+              <div class="col col-sm-5 wow fadeInLeft">
+                <div class="">
+                  <img class="img-fluid rounded" src="images/img-2.jpg" height="30vh" />
+                </div>
+              </div>
+              <div class="col col-sm-7 wow fadeInRight">
+                <h4>2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="text-end">
+                  <a href="#" class="btn btn-secondary btn-withIcon">
+                  View More
+                  <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="row">
+              <div class="col col-sm-5 wow fadeInLeft">
+                <div class="">
+                  <img class="img-fluid rounded" src="images/img-3.jpg" height="30vh" />
+                </div>
+              </div>
+              <div class="col col-sm-7 wow fadeInRight">
+                <h4>3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="text-end">
+                  <a href="#" class="btn btn-secondary btn-withIcon">
+                  View More
+                  <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-box">
+      <div class="container container-large">
+        <div class="row">
+          <div class="col col-sm-4">
+            <div class="info-block wow zoomIn h-100">
+              <div class="card card-master h-100">
+                <div class="card-header">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                      <i data-feather="map-pin"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <h4>Locate Us</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29535.137229336193!2d73.1689454!3d22.28207475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1696770693446!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm-4">
+            <div class="info-block wow zoomIn h-100">
+              <div class="card card-master h-100">
+                <div class="card-header">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                      <i data-feather="award"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <h4>Connect with us</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="p-5">
+                    <a href="javascript: void(0);" class="mb-5 d-block w-100"><img class="img-fluid" src="images/logo.png" /></a>
+                    <div>
+                      <div class="d-flex align-items-center mb-3">
+                        <i data-feather="phone-call"></i>
+                        <p class="m-0 ms-3">+91 9898 989 898</p>
+                      </div>
+                      <div class="d-flex align-items-center mb-3">
+                        <i data-feather="mail"></i>
+                        <p class="m-0 ms-3">info@domainname.com</p>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i data-feather="map-pin"></i>
+                        <p class="m-0 ms-3">Vadodara, Gujrat - India 000000</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-sm-4">
+            <div class="connect-block wow zoomIn">
               <div class="card card-master">
                 <div class="card-header">
                   <div class="d-flex">
@@ -260,7 +714,7 @@
                   </div>
                   <div class="text-center">
                     <small class="text-muted mb-1 d-block font-12">Your information is safe with us. We do not sell or rent emails.</small>
-                    <a href="#" class="btn btn-primary btn-withIcon">
+                    <a href="#" class="btn btn-secondary btn-withIcon">
                       Easy to Connect
                       <span class="icon"><i data-feather="chevron-right"></i></span>
                     </a>
@@ -273,311 +727,7 @@
       </div>
     </section>
 
-    <block>
-      <section class="section-box">
-        <div class="container container-extraLarge">
-          <div class="section-title mb-2">
-            <h2>Lorem <span>Ipsum Dollar</span></h2>
-          </div>
-          <div class="product-slider">
-            <div class="productNavbar-slider navbar-nav mb-3">
-              <div class="nav-item">
-                <a class="nav-link">Behavioral Health</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link">Certified Community Behavioral Health Clinics (CCBHC)</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link">Mental Health</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link">Health and Human Services</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link">Substance Use Disorder Treatment</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link">Intellectual & Developmental Disabilities and Autism Spectrum Disorders</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link">Rehabilitative (PT/OT/SLP)</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link">Inpatient and Residential</a>
-              </div>
-            </div>
-          </div>
-          <div class="product-gridView my-5">
-            <div class="row is-animated-slider">
-              <div class="col-sm-6 mb-4">
-                <div class="slide position-relative overflow-hidden">
-                  <img class="img-fluid" src="https://placehold.co/1000x600/777777/FFF" />
-                  <div class="text-container">
-                    <div class="slide-caption">
-                      <div class="d-flex align-items-center">
-                        <h4 class="heading">Inpatient and Residential</h4>
-                        <div class="btns">
-                          <a href="#" class="btn btn-primary btn-withIcon">
-                            View More
-                            <span class="icon"><i data-feather="chevron-right"></i></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 mb-4">
-                <div class="slide position-relative overflow-hidden">
-                  <img class="img-fluid" src="https://placehold.co/1000x600/777777/FFF" />
-                  <div class="text-container">
-                    <div class="slide-caption">
-                      <div class="d-flex align-items-center">
-                        <h4 class="heading">Inpatient and Residential</h4>
-                        <div class="btns">
-                          <a href="#" class="btn btn-primary btn-withIcon">
-                            View More
-                            <span class="icon"><i data-feather="chevron-right"></i></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 mb-4">
-                <div class="slide position-relative overflow-hidden">
-                  <img class="img-fluid" src="https://placehold.co/1000x600/777777/FFF" />
-                  <div class="text-container">
-                    <div class="slide-caption">
-                      <div class="d-flex align-items-center">
-                        <h4 class="heading">Inpatient and Residential</h4>
-                        <div class="btns">
-                          <a href="#" class="btn btn-primary btn-withIcon">
-                            View More
-                            <span class="icon"><i data-feather="chevron-right"></i></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 mb-4">
-                <div class="slide position-relative overflow-hidden">
-                  <img class="img-fluid" src="https://placehold.co/1000x600/777777/FFF" />
-                  <div class="text-container">
-                    <div class="slide-caption">
-                      <div class="d-flex align-items-center">
-                        <h4 class="heading">Inpatient and Residential</h4>
-                        <div class="btns">
-                          <a href="#" class="btn btn-primary btn-withIcon">
-                            View More
-                            <span class="icon"><i data-feather="chevron-right"></i></span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="product-details">
-            <div class="section-title has-noElement mb-2">
-              <h2 class="p-0">Lorem <span>Ipsum Dollar</span></h2>
-            </div>
-            <div class="border border-dark-subtle rounded p-4 pb-2 text-dark">
-              <h4>Heading</h4>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </block>
-
-    <block class="d-none">
-      <section class="section-box">
-        <div class="container container-extraLarge">
-          <div class="section-title mb-4">
-            <h2>Lorem <span>Ipsum Dollar</span></h2>
-          </div>
-          <div class="updates-gridView">
-            <div class="row">
-              <div class="col col-sm-6 mb-4">
-                <div class="slide position-relative border border-dark-subtle rounded p-3">
-                  <img class="img-fluid rounded" src="https://placehold.co/1000x500/777777/FFF" />
-                  <h4 class="text-dark mt-4 mb-3">Heading</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                  <div class="text-end">
-                    <a href="#" class="btn btn-primary btn-withIcon">
-                      View More
-                      <span class="icon"><i data-feather="chevron-right"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col col-sm-6 mb-4">
-                <div class="slide position-relative border border-dark-subtle rounded p-3">
-                  <img class="img-fluid rounded" src="https://placehold.co/1000x500/777777/FFF" />
-                  <h4 class="text-dark mt-4 mb-3">Heading</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                  <div class="text-end">
-                    <a href="#" class="btn btn-primary btn-withIcon">
-                      View More
-                      <span class="icon"><i data-feather="chevron-right"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col col-sm-6 mb-4">
-                <div class="slide position-relative border border-dark-subtle rounded p-3">
-                  <img class="img-fluid rounded" src="https://placehold.co/1000x500/777777/FFF" />
-                  <h4 class="text-dark mt-4 mb-3">Heading</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                  <div class="text-end">
-                    <a href="#" class="btn btn-primary btn-withIcon">
-                      View More
-                      <span class="icon"><i data-feather="chevron-right"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col col-sm-6 mb-4">
-                <div class="slide position-relative border border-dark-subtle rounded p-3">
-                  <img class="img-fluid rounded" src="https://placehold.co/1000x500/777777/FFF" />
-                  <h4 class="text-dark mt-4 mb-3">Heading</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                  <div class="text-end">
-                    <a href="#" class="btn btn-primary btn-withIcon">
-                      View More
-                      <span class="icon"><i data-feather="chevron-right"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="">
-              <nav>
-                <ul class="pagination justify-content-center align-items-center">
-                  <li class="page-item go-prev d-flex align-items-center"><a class="page-link"><i data-feather="chevron-left"></i></a></li>
-                  <li class="page-item disabled">
-                    <a class="page-link text-uppercase">Pages</a>
-                  </li>
-                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item go-next d-flex align-items-center"><a class="page-link"><i data-feather="chevron-right"></i></a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </section>
-    </block>
-
-    <block class="d-none">
-      <section class="section-box">
-        <div class="container container-extraLarge">
-          <div class="section-title mb-4">
-            <h2>Lorem <span>Ipsum Dollar</span></h2>
-          </div>
-          <div class="updates-gridView">
-            <div class="row">
-              <div class="col col-sm-4 mb-4">
-                <div class="slide position-relative border border-dark-subtle rounded p-3">
-                  <h4 class="text-dark mt-1 mb-3">Heading</h4>
-                  <img class="img-fluid rounded mb-3" src="https://placehold.co/1000x1410/777777/FFF" />
-                  <div class="text-end">
-                    <a href="#" class="btn btn-primary btn-withIcon">
-                      View More
-                      <span class="icon"><i data-feather="chevron-right"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col col-sm-4 mb-4">
-                <div class="slide position-relative border border-dark-subtle rounded p-3">
-                  <h4 class="text-dark mt-1 mb-3">Heading</h4>
-                  <img class="img-fluid rounded mb-3" src="https://placehold.co/1000x1410/777777/FFF" />
-                  <div class="text-end">
-                    <a href="#" class="btn btn-primary btn-withIcon">
-                      View More
-                      <span class="icon"><i data-feather="chevron-right"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col col-sm-4 mb-4">
-                <div class="slide position-relative border border-dark-subtle rounded p-3">
-                  <h4 class="text-dark mt-1 mb-3">Heading</h4>
-                  <img class="img-fluid rounded mb-3" src="https://placehold.co/1000x1410/777777/FFF" />
-                  <div class="text-end">
-                    <a href="#" class="btn btn-primary btn-withIcon">
-                      View More
-                      <span class="icon"><i data-feather="chevron-right"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col col-sm-4 mb-4">
-                <div class="slide position-relative border border-dark-subtle rounded p-3">
-                  <h4 class="text-dark mt-1 mb-3">Heading</h4>
-                  <img class="img-fluid rounded mb-3" src="https://placehold.co/1000x1410/777777/FFF" />
-                  <div class="text-end">
-                    <a href="#" class="btn btn-primary btn-withIcon">
-                      View More
-                      <span class="icon"><i data-feather="chevron-right"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col col-sm-4 mb-4">
-                <div class="slide position-relative border border-dark-subtle rounded p-3">
-                  <h4 class="text-dark mt-1 mb-3">Heading</h4>
-                  <img class="img-fluid rounded mb-3" src="https://placehold.co/1000x1410/777777/FFF" />
-                  <div class="text-end">
-                    <a href="#" class="btn btn-primary btn-withIcon">
-                      View More
-                      <span class="icon"><i data-feather="chevron-right"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col col-sm-4 mb-4">
-                <div class="slide position-relative border border-dark-subtle rounded p-3">
-                  <h4 class="text-dark mt-1 mb-3">Heading</h4>
-                  <img class="img-fluid rounded mb-3" src="https://placehold.co/1000x1410/777777/FFF" />
-                  <div class="text-end">
-                    <a href="#" class="btn btn-primary btn-withIcon">
-                      View More
-                      <span class="icon"><i data-feather="chevron-right"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="">
-              <nav>
-                <ul class="pagination justify-content-center align-items-center">
-                  <li class="page-item go-prev d-flex align-items-center"><a class="page-link"><i data-feather="chevron-left"></i></a></li>
-                  <li class="page-item disabled">
-                    <a class="page-link text-uppercase">Pages</a>
-                  </li>
-                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item go-next d-flex align-items-center"><a class="page-link"><i data-feather="chevron-right"></i></a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </section>
-    </block>
-
-    <footer class="theme-footer d-none">
+    <footer class="theme-footer">
       <div class="footer-sitemap">
         <div class="container-fluid ">
           <div class="row">
@@ -585,11 +735,11 @@
               <div class="widget sitemap-links-widget">
                 <h3>Services</h3>
                 <ul>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Platform Login</a></li>
-                    <li><a href="#">ONC Certification and Costs</a></li>
-                    <li><a href="#">API Documentation</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
                 </ul>
               </div>
             </div>
@@ -597,11 +747,11 @@
               <div class="widget sitemap-links-widget">
                 <h3>Services</h3>
                 <ul>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Platform Login</a></li>
-                    <li><a href="#">ONC Certification and Costs</a></li>
-                    <li><a href="#">API Documentation</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
                 </ul>
               </div>
             </div>
@@ -609,11 +759,11 @@
               <div class="widget sitemap-links-widget">
                 <h3>Services</h3>
                 <ul>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Platform Login</a></li>
-                    <li><a href="#">ONC Certification and Costs</a></li>
-                    <li><a href="#">API Documentation</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
                 </ul>
               </div>
             </div>
@@ -621,18 +771,40 @@
               <div class="widget sitemap-links-widget">
                 <h3>Services</h3>
                 <ul>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Platform Login</a></li>
-                    <li><a href="#">ONC Certification and Costs</a></li>
-                    <li><a href="#">API Documentation</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
+                  <li><a href="#">Sitemap Link</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="footer-standard">
+        <div class="container container-extraLarge">
+          <div class="row align-items-end">
+            <div class="col col-sm-3">
+              <h5 class="text-light">This website is powered by:</h5>
+              <img class="img-md" src="images/logo.png" />
+            </div>
+            <div class="col col-sm-6 text-center">
+              <h4 class="text-white">A Vanture of</h4>
+              <img class="img-lg" src="images/logo.png" />
+              <h5 class="text-light text-uppercase my-3">Giant Inflatable India</h5>
+              <img cl src="images/logo.png" class="img-sm my-3" />
+              <h4 class="text-white m-0">&copy; Copyrights.</h4>
+            </div>
+            <div class="col col-sm-3 text-end">
+              <h5 class="text-light">SEO-SEM-SMM-PCC By:</h5>
+              <img class="img-md" src="images/logo.png" />
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
+    
   </div>
 
   <script src="js/jquery.min.js"></script>
@@ -644,6 +816,44 @@
 
   <!-- Custom script for this template -->
   <script src="js/app.js"></script>
+  <script>
+    $(document).ready(function(){
+    
+      new WOW().init();
+
+      var didScroll;
+      var lastScrollTop = 0;
+      var delta = 5;
+      var headerHeight = $('header').outerHeight();
+      var topNavHeight = $('.header-topbar').outerHeight();
+      var headerMainHeight = $('.header-navbar').outerHeight();
+      $(window).scroll(function(event){
+          didScroll = true;
+      });
+      setInterval(function() {
+          if (didScroll) {hasScrolled();didScroll = false;}
+      }, 250);
+      function hasScrolled() {
+          var st = $(this).scrollTop();
+          if(Math.abs(lastScrollTop - st) <= delta)
+              return;
+          if (st > lastScrollTop && st > headerHeight){
+              // Scroll Down
+              $('header').removeClass('fixed-down').addClass('fixed-up');
+              $('.fixed-up').css('top', -(topNavHeight + headerMainHeight));
+          } else {
+              // Scroll Up
+              $('.fixed-up').css('top', '0');
+              if(st + $(window).height() < $(document).height()) {
+                  $('header').removeClass('fixed-up').addClass('fixed-down');
+              }
+          }
+          lastScrollTop = st;
+      };
+      $('body').css('padding-top', headerHeight);
+
+    })
+  </script>
 </body>
 
 </html>

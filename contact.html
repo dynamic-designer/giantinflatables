@@ -80,7 +80,7 @@
       <div class="header-navbar">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <button class="btn btn-dark slidingMenu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
               <i data-feather="menu"></i>
             </button>
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -151,23 +151,13 @@
     </header>
 
     <section class="page-title">
-      <div class="background-container">
-        <div class="container container-large position-relative">
-          <div class="row">
-            <div class="col col-xs-12">
-              <h3>Sub Heading</h3>
-              <h1 class="text-uppercase"><span class="text-primary">Main Heading</span><br>Continue</h1>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="breadcrumb-container py-2">
         <div class="container container-large">
           <div class="row">
             <div class="col col-xs-12">
               <div class="d-flex align-items-center">
                 <ol class="breadcrumb m-0">
-                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index.html"><i data-feather="home"></i> Home</a></li>
                   <li><a class="text-primary">Contact Us</a></li>
                 </ol>
                 <a href="#" class="btn btn-secondary btn-withIcon ms-auto">
@@ -381,6 +371,11 @@
       </div>
     </footer>
   </div>
+
+  <!-- Back to top button -->
+  <a id="backToTopButton">
+    <i data-feather="arrow-up"></i>
+  </a>
 
   <script src="js/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>

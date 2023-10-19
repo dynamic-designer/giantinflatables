@@ -2,6 +2,8 @@
 
     "use strict";
 
+    var backToTopBtn = $('#backToTopButton');
+
     /*------------------------------------------
         = FUNCTIONS
     -------------------------------------------*/
@@ -48,6 +50,8 @@
                 infinite: false,
                 dots: false,
                 arrows: true,
+                autoplay: true ,
+                autoplaySpeed: 4000,
                 prevArrow: '<div class="slick-prev slick-btn"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
                 nextArrow: '<div class="slick-next slick-btn"><span class="arrow-icon"><i data-feather="chevron-right"></i></span></div>',
             });
@@ -63,6 +67,8 @@
                     slidesToShow: 6,
                     dots: false,
                     arrows: true,
+                    autoplay: true ,
+                    autoplaySpeed: 4000,
                     prevArrow: '<div class="slick-prev"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
                     nextArrow: '<div class="slick-next"><span class="arrow-icon"><i data-feather="chevron-right"></i></span></div>',
                 });
@@ -84,12 +90,31 @@
     }
 
     //Setting Update Vertical slider
+    function productNavbarOnlySlider() {
+        if ($(".productNavbarOnly-slider").length) {
+            $(".productNavbarOnly-slider").slick({
+                draggable: false,
+                infinite: false,
+                variableWidth: true,
+                slidesToShow: 6,
+                dots: false,
+                arrows: true,
+                autoplay: false ,
+                autoplaySpeed: 4000,
+                prevArrow: '<div class="slick-prev"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
+                nextArrow: '<div class="slick-next"><span class="arrow-icon"><i data-feather="chevron-right"></i></span></div>',
+            });
+        }
+    }
+
+    //Setting Update Vertical slider
     function updateVerticalSlider() {
         if ($(".updateVertical-slider").length) {
             $(".updateVertical-slider").slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                autoplay: false ,
+                autoplay: true,
+                autoplaySpeed: 4000,
                 infinite: true,
                 vertical: true,
                 asNavFor: '.updateHorizontal-slider',
@@ -99,12 +124,14 @@
             });
         }
     }
+
     function updateHorizontalSlider() {
         if ($(".updateHorizontal-slider").length) {
             $(".updateHorizontal-slider").slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                autoplay: false ,
+                autoplay: true ,
+                autoplaySpeed: 4000,
                 infinite: true,
                 asNavFor: '.updateVertical-slider',
                 arrows: true,
@@ -113,12 +140,65 @@
             });
         }
     }
+
+    
+    function productgridViewSlider() {
+        if ($(".productgridView-slider").length) {
+            $(".productgridView-slider").slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true ,
+                autoplaySpeed: 4000,
+                infinite: true,
+                arrows: true,
+                prevArrow: '<div class="slick-prev slick-btn"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
+                nextArrow: '<div class="slick-next slick-btn"><span class="arrow-icon"><i data-feather="chevron-right"></i></span></div>',
+            });
+        }
+    }
+    
+
+    
+    function updateDetailSlider() {
+        if ($(".updateDetails-slider").length) {
+            $(".updateDetails-slider").slick({
+                autoplay: true ,
+                autoplaySpeed: 4000,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+                arrows: true,
+                prevArrow: '<div class="slick-prev slick-btn"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
+                nextArrow: '<div class="slick-next slick-btn"><span class="arrow-icon"><i data-feather="chevron-right"></i></span></div>',
+            });
+        }
+    }
+
+    function updateMainSlider() {
+        if ($(".updateMain-slider").length) {
+            $(".updateMain-slider").slick({
+                autoplay: true ,
+                autoplaySpeed: 4000,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+                arrows: true,
+                prevArrow: '<div class="slick-prev slick-btn"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
+                nextArrow: '<div class="slick-next slick-btn"><span class="arrow-icon"><i data-feather="chevron-right"></i></span></div>',
+            });
+        }
+    }
+
     function caseStudiesSlider() {
         if ($(".caseStudies-slider").length) {
             $(".caseStudies-slider").slick({
+                autoplay: true ,
+                autoplaySpeed: 5000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                autoplay: true ,
+                fade: true,
                 infinite: true,
                 arrows: false,
                 dots: false
@@ -173,9 +253,13 @@
         sliderBgSetting();
 
         productSlider();
+        productNavbarOnlySlider();
+        productgridViewSlider();
 
         updateVerticalSlider();
         updateHorizontalSlider();
+        updateDetailSlider();
+        updateMainSlider();
 
         caseStudiesSlider();
 
@@ -185,6 +269,11 @@
         var windowHeight = $(window).outerHeight()
         var headerHeight = $('header').outerHeight();
         $(".hero-slider-wrapper").css("height", (windowHeight - headerHeight)+"px")
+
+        backToTopBtn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '100');
+        });
 
     });
 
@@ -207,6 +296,12 @@
         });
 
         bsOffcanvas.hide();
+
+        if ($(window).scrollTop() > 300) {
+            backToTopBtn.addClass('show');
+        } else {
+            backToTopBtn.removeClass('show');
+        }
     });
 
     

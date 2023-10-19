@@ -80,7 +80,7 @@
       <div class="header-navbar">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <button class="btn btn-dark slidingMenu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
               <i data-feather="menu"></i>
             </button>
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -93,7 +93,7 @@
                     <a class="nav-link" href="about.html">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Our Products</a>
+                    <a class="nav-link" href="products.html">Our Products</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Brochures</a>
@@ -123,7 +123,7 @@
                   <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Our Products</a>
+                  <a class="nav-link" href="products.html">Our Products</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Brochures</a>
@@ -154,7 +154,7 @@
       <div class="hero-slider">
         <div class="slide">
           <img src="images/slider/slide-1.jpg" alt class="slider-bg">
-          <div class="container w-100">
+          <div class="container container-large w-100">
             <div class="row w-100">
               <div class="col col-lg-10 col-sm-12 slide-caption">
                 <h2>Any Size, Any Shape</h2>
@@ -172,7 +172,7 @@
         </div>
         <div class="slide">
           <img src="images/slider/slide-2.jpg" alt class="slider-bg">
-          <div class="container w-100">
+          <div class="container container-large w-100">
             <div class="row w-100">
               <div class="col col-lg-10 col-sm-12 slide-caption">
                 <h2>Any Size, Any Shape</h2>
@@ -190,7 +190,7 @@
         </div>
         <div class="slide">
           <img src="images/slider/slide-3.jpg" alt class="slider-bg">
-          <div class="container w-100">
+          <div class="container container-large w-100">
             <div class="row w-100">
               <div class="col col-lg-10 col-sm-12 slide-caption">
                 <h2>Any Size, Any Shape</h2>
@@ -216,17 +216,17 @@
       <div class="container container-large">
         <div class="row has-connectBlock">
           <div class="col col-md-8 is-fluidBlock">
-            <div class="section-title">
+            <div class="section-title wow fadeInDown">
               <h2>Lorem<span>ipsum dolor</span>sit amet</h2>
               <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h3>
             </div>
             <div class="row">
               <div class="col col-sm-5">
-                <div class="image-animation--wrapper">
+                <div class="wow slideInLeft">
                   <img class="img-fluid rounded" src="images/img-1.jpg" />
                 </div>
               </div>
-              <div class="col col-sm-7">
+              <div class="col col-sm-7 wow slideInLeft">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
               </div>
@@ -275,8 +275,8 @@
                     <span class="input-group-text" id="">
                       <i data-feather="globe"></i>
                     </span>
-                    <select class="form-select" aria-label="Select Country">
-                      <option disabled selected hidden>Select Country</option>
+                    <select class="form-select" aria-label="Select Country" required>
+                      <option value="" selected>Select Country</option>
                       <option value="1">One</option>
                       <option value="2">Two</option>
                       <option value="3">Three</option>
@@ -304,7 +304,7 @@
     </section>
 
     <section class="section-box">
-      <div class="container container-large">
+      <div class="container container-right-extended">
         <div class="d-flex">
           <div class="section-title mb-2">
             <h2>Industrial <span>Inflatable</span> Products</h2>
@@ -489,7 +489,7 @@
       <div class="container container-large position-relative">
         <div class="row">
             <div class="col col-sm-4">
-                <div class="feature-grid">
+                <div class="feature-grid wow zoomIn">
                     <div class="icon">
                         <i data-feather="mail"></i>
                     </div>
@@ -500,7 +500,7 @@
                 </div>
             </div>
             <div class="col col-sm-4">
-                <div class="feature-grid">
+                <div class="feature-grid wow zoomIn">
                     <div class="icon">
                       <i data-feather="mail"></i>
                     </div>
@@ -511,7 +511,7 @@
                 </div>
             </div>
             <div class="col col-sm-4">
-                <div class="feature-grid">
+                <div class="feature-grid wow zoomIn">
                     <div class="icon">
                       <i data-feather="mail"></i>
                     </div>
@@ -551,7 +551,7 @@
       </div>
       <div class="container container-large">
         <div class="row">
-          <div class="col col-sm-3">
+          <div class="col col-sm-3 wow bounceInLeft">
             <div class="updateVertical-slider">
               <div class="slide">
                 <div class="text-container">
@@ -573,9 +573,9 @@
               </div>
             </div>
           </div>
-          <div class="col col-sm-9">
+          <div class="col col-sm-9 wow zoomIn">
             <div class="updateHorizontal-slider is-animated-slider">
-              <div class="slide image-animation--wrapper">
+              <div class="slide">
                 <img src="images/img-1.jpg" alt class="slider-bg">
                 <div class="text-container">
                   <div class="slide-caption">
@@ -591,7 +591,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slide image-animation--wrapper">
+              <div class="slide">
                 <img src="images/img-2.jpg" alt class="slider-bg">
                 <div class="text-container">
                   <div class="slide-caption">
@@ -607,7 +607,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slide image-animation--wrapper">
+              <div class="slide">
                 <img src="images/img-3.jpg" alt class="slider-bg">
                 <div class="text-container">
                   <div class="slide-caption">
@@ -645,13 +645,13 @@
         <div class="caseStudies-slider">
           <div class="slide">
             <div class="row">
-              <div class="col col-sm-5">
-                <div class="image-animation--wrapper">
+              <div class="col col-sm-5 wow fadeInLeft">
+                <div class="">
                   <img class="img-fluid rounded" src="images/img-1.jpg" height="30vh" />
                 </div>
               </div>
-              <div class="col col-sm-7">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h4>
+              <div class="col col-sm-7 wow fadeInRight">
+                <h4>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="text-end">
                   <a href="#" class="btn btn-secondary btn-withIcon">
@@ -664,13 +664,13 @@
           </div>
           <div class="slide">
             <div class="row">
-              <div class="col col-sm-5">
-                <div class="image-animation--wrapper">
-                  <img class="img-fluid rounded" src="images/img-1.jpg" height="30vh" />
+              <div class="col col-sm-5 wow fadeInLeft">
+                <div class="">
+                  <img class="img-fluid rounded" src="images/img-2.jpg" height="30vh" />
                 </div>
               </div>
-              <div class="col col-sm-7">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h4>
+              <div class="col col-sm-7 wow fadeInRight">
+                <h4>2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="text-end">
                   <a href="#" class="btn btn-secondary btn-withIcon">
@@ -683,13 +683,13 @@
           </div>
           <div class="slide">
             <div class="row">
-              <div class="col col-sm-5">
-                <div class="image-animation--wrapper">
-                  <img class="img-fluid rounded" src="images/img-1.jpg" height="30vh" />
+              <div class="col col-sm-5 wow fadeInLeft">
+                <div class="">
+                  <img class="img-fluid rounded" src="images/img-3.jpg" height="30vh" />
                 </div>
               </div>
-              <div class="col col-sm-7">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h4>
+              <div class="col col-sm-7 wow fadeInRight">
+                <h4>3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div class="text-end">
                   <a href="#" class="btn btn-secondary btn-withIcon">
@@ -762,7 +762,7 @@
             </div>
           </div>
           <div class="col col-sm-4">
-            <div class="connect-block wow zoomIn">
+            <div class="connect-block wow swing">
               <div class="card card-master">
                 <div class="card-header">
                   <div class="d-flex">
@@ -798,8 +798,8 @@
                     <span class="input-group-text" id="">
                       <i data-feather="globe"></i>
                     </span>
-                    <select class="form-select" aria-label="Select Country">
-                      <option disabled selected hidden>Select Country</option>
+                    <select class="form-select" aria-label="Select Country" required>
+                      <option value="" selected>Select Country</option>
                       <option value="1">One</option>
                       <option value="2">Two</option>
                       <option value="3">Three</option>
@@ -904,6 +904,11 @@
       </div>
     </footer>
   </div>
+
+  <!-- Back to top button -->
+  <a id="backToTopButton">
+    <i data-feather="arrow-up"></i>
+  </a>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
