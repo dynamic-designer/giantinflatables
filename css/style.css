@@ -1109,7 +1109,7 @@ select.form-select option[value=""] {
         --theme-base-control-size: 40px;
     }
     body, .btn-primary, .btn-secondary {font-size: 14px;}
-    .btn-primary, .btn-secondary {line-height: 1;}
+    .btn-primary, .btn-secondary {line-height: 1;padding-top: 5px;padding-bottom: 3px;}
     body {padding-top: 174px;}
     h4 {font-size: 20px;}
     .has-connectBlock > .is-fluidBlock {width: calc(100% - 360px);}
@@ -1117,7 +1117,7 @@ select.form-select option[value=""] {
     .theme-header .header-topbar .site-logo img {height: 70px;}
     .theme-header .header-navbar .navbar {padding: 5px 6px 5px 100px;}
     .theme-header .header-navbar .navbar .btn-dark {height: 50px;}
-    .theme-header .header-navbar .navbar-nav .nav-item .nav-link {padding: 9px 15px 10px;}
+    .theme-header .header-navbar .navbar-nav .nav-item .nav-link {padding: 10px 15px 8px;}
     .theme-header .header-navbar .offcanvas,
     .theme-header.fixed-down .header-navbar .offcanvas {top: 150px;}
     .section-title h2 {font-size: 28px;}
