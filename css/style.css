@@ -1109,7 +1109,7 @@ select.form-select option[value=""] {
         --theme-base-control-size: 40px;
     }
     body, .btn-primary, .btn-secondary {font-size: 14px;}
-    .btn-primary, .btn-secondary {line-height: 1;padding-top: 5px;padding-bottom: 3px;}
+    .btn-primary, .btn-secondary {line-height: 1;padding-top: 4px;padding-bottom: 3px;}
     body {padding-top: 174px;}
     h4 {font-size: 20px;}
     .has-connectBlock > .is-fluidBlock {width: calc(100% - 360px);}
@@ -1142,6 +1142,6 @@ select.form-select option[value=""] {
     .page-title .background-container {height: 250px;}
     .page-title h1 {font-size: 42px;}
     .page-title h3 {font-size: 24px;}
-    .breadcrumb-container .breadcrumb li a {padding: 8px 20px}
+    .breadcrumb-container .breadcrumb li a {padding: 11px 15px 9px;}
     .pagination .page-item:not(.go-next):not(.go-prev):not(.disabled) .page-link {width: 40px;height: 40px;}
 }
