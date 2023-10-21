@@ -81,7 +81,7 @@
       <div class="header-navbar">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <button class="btn btn-dark slidingMenu type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <button class="btn btn-dark slidingMenu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
               <i data-feather="menu"></i>
             </button>
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -274,11 +274,74 @@
                       </div>
                     </div>
                     <div class="card-body p-0">
-                      <div id="fotorama" class="fotorama" data-nav="thumbs" data-arrows="true" data-click="true" data-swipe="true"
-                      data-width="100%"
-                      data-ratio="150/75"
-                      data-loop="true">
-                      </div> 
+                      <div>
+                        <div class="productDetail-slider">
+                          <div class="productDeatailImage-slider">
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=1" alt class="slider-bg">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=2" alt class="slider-bg">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=3" alt class="slider-bg">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=4" alt class="slider-bg">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=5" alt class="slider-bg">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=6" alt class="slider-bg">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=7" alt class="slider-bg">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=8" alt class="slider-bg">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=9" alt class="slider-bg">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=10" alt class="slider-bg">
+                            </div>
+                          </div>
+                          <div class="productDeatailThumb-slider">
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=1" alt class="slider-bg img-fluid">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=2" alt class="slider-bg img-fluid">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=3" alt class="slider-bg img-fluid">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=4" alt class="slider-bg img-fluid">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=5" alt class="slider-bg img-fluid">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=6" alt class="slider-bg img-fluid">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=7" alt class="slider-bg img-fluid">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=8" alt class="slider-bg img-fluid">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=9" alt class="slider-bg img-fluid">
+                            </div>
+                            <div class="slide">
+                              <img src="https://placehold.co/1000x500/ccc/FFF?text=10" alt class="slider-bg img-fluid">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -922,62 +985,6 @@
   <script src="js/app.js"></script>
   <script>
     $(document).ready(function(){
-      var $fotorama = $('#fotorama'),
-    pixelRatio = window.devicePixelRatio || 1,
-    width = Math.min(760 * pixelRatio, 1280),
-    ratio = 2.2,
-    thumbHeight = 60,
-    thumbWidth = 100,
-    album = {
-        by: {
-            href: 'https://unsplash.com/',
-            title: 'Unsplash'
-        },
-        uuids: [
-            '05e7ff61-c1d5-4d96-ae79-c381956cca2e',
-            'cd8dfa25-2bc5-4546-995a-f3fd23809e1d',
-            '382a5139-6712-4418-b25e-cc8ba69ab07f',
-            '3ed25902-4a51-4628-a057-1e55fbca7856',
-            '5b0b329d-050e-4143-bc92-7f40cdde46f5',
-            '3df9ac37-4e86-49e5-9095-28679ab37718',
-            '9e7211c0-b73b-4b1d-8b47-4b1700f9a80f',
-            '1cc3c44b-e4a9-4e37-96cf-afafeb3eb748',
-            '3ed25902-4a51-4628-a057-1e55fbca7856',
-            '5b0b329d-050e-4143-bc92-7f40cdde46f5',
-            '3df9ac37-4e86-49e5-9095-28679ab37718',
-        ]
-    };
-
-        var data = $.map(album.uuids, function (uuid) {
-            var full = 'https://ucarecdn.com/' + uuid + '/';
-            return {
-                full: full,
-                img: full + '-/stretch/off/-/resize/' + width + 'x/',
-                thumb: full + '-/scale_crop/' + (thumbWidth * pixelRatio) + 'x' + (thumbHeight * pixelRatio) + '/center/',
-                id: uuid
-            }
-        });
-
-        $fotorama.fotorama({
-            data: data,
-            clicktransition: 'dissolve',
-            width: '100%',
-            ratio: ratio,
-            hash: true,
-            maxheight: '100%',
-            nav: 'thumbs',
-            margin: 0,
-            shuffle: true,
-            thumbmargin: 20,
-            thumbwidth: thumbWidth,
-            thumbheight: thumbHeight,
-            allowfullscreen: 'native',
-            keyboard: {space: true},
-            shadows: false,
-            fit: 'cover'
-        });
-
-    
       new WOW().init();
 
       var didScroll;

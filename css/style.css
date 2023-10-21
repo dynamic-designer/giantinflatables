@@ -382,34 +382,34 @@ select.form-select option[value=""] {
     padding: 15px 30px;
 }
 .theme-header .header-navbar .offcanvas.show .navbar-nav .nav-item:nth-child(1) {
-    animation: fadeInLeftSlow 1.5s 0.1s forwards;
+    animation: fadeInLeftSlow 0.5s 0.1s forwards;
 }
 .theme-header .header-navbar .offcanvas.show .navbar-nav .nav-item:nth-child(2) {
-    animation: fadeInLeftSlow 1.5s 0.2s forwards;
+    animation: fadeInLeftSlow 0.5s 0.2s forwards;
 }
 .theme-header .header-navbar .offcanvas.show .navbar-nav .nav-item:nth-child(3) {
-    animation: fadeInLeftSlow 1.5s 0.3s forwards;
+    animation: fadeInLeftSlow 0.5s 0.3s forwards;
 }
 .theme-header .header-navbar .offcanvas.show .navbar-nav .nav-item:nth-child(4) {
-    animation: fadeInLeftSlow 1.5s 0.4s forwards;
+    animation: fadeInLeftSlow 0.5s 0.4s forwards;
 }
 .theme-header .header-navbar .offcanvas.show .navbar-nav .nav-item:nth-child(5) {
-    animation: fadeInLeftSlow 1.5s 0.5s forwards;
+    animation: fadeInLeftSlow 0.5s 0.5s forwards;
 }
 .theme-header .header-navbar .offcanvas.show .navbar-nav .nav-item:nth-child(6) {
-    animation: fadeInLeftSlow 1.5s 0.6s forwards;
+    animation: fadeInLeftSlow 0.5s 0.6s forwards;
 }
 .theme-header .header-navbar .offcanvas.show .navbar-nav .nav-item:nth-child(7) {
-    animation: fadeInLeftSlow 1.5s 0.7s forwards;
+    animation: fadeInLeftSlow 0.5s 0.7s forwards;
 }
 .theme-header .header-navbar .offcanvas.show .navbar-nav .nav-item:nth-child(8) {
-    animation: fadeInLeftSlow 1.5s 0.8s forwards;
+    animation: fadeInLeftSlow 0.5s 0.8s forwards;
 }
 .theme-header .header-navbar .offcanvas.show .navbar-nav .nav-item:nth-child(9) {
-    animation: fadeInLeftSlow 1.5s 0.9s forwards;
+    animation: fadeInLeftSlow 0.5s 0.9s forwards;
 }
 .theme-header .header-navbar .offcanvas.show .navbar-nav .nav-item:nth-child(10) {
-    animation: fadeInLeftSlow 1.5s 1s forwards;
+    animation: fadeInLeftSlow 0.5s 1s forwards;
 }
 /* Keyframes */
 @keyframes fill {
@@ -980,6 +980,50 @@ select.form-select option[value=""] {
     text-shadow: 2px 2px 6px #000;
 }
 
+.productDetail-slider .productDeatailImage-slider .slick-prev {
+    left: -50px;
+}
+.productDetail-slider .productDeatailImage-slider .slick-next {
+    right: -50px;
+}
+.productDetail-slider .productDeatailImage-slider:hover .slick-prev {
+    left: 15px;
+}
+.productDetail-slider .productDeatailImage-slider:hover .slick-next {
+    right: 15px;
+}
+.productDetail-slider .productDeatailImage-slider .slide {
+    height: 600px;
+}
+.productDetail-slider .productDeatailImage-slider .slide .slider-bg,
+.productDetail-slider .productDeatailThumb-slider .slide .slider-bg {
+    display: none;
+}
+.productDetail-slider .productDeatailThumb-slider .slick-prev {
+    left: 15px;
+}
+.productDetail-slider .productDeatailThumb-slider .slick-next {
+    right: 15px;
+}
+.productDetail-slider .productDeatailThumb-slider {
+    padding: 0 70px;
+}
+.productDetail-slider .productDeatailThumb-slider .slide {
+    border: 2px solid #ccc;
+    border-radius: var(--theme-base-border-radius);
+}
+.productDetail-slider .productDeatailThumb-slider .slide.is-active {
+    border-color: var(--theme-secondary-color);
+}
+.productDetail-slider .productDeatailThumb-slider .slick-list .slick-track {
+    margin: 0 auto;
+}
+.productDetail-slider .productDeatailThumb-slider .slide {
+    cursor: pointer;
+    height: 60px;
+    margin: 10px;
+}
+
 .updates-gridView .slide:hover {
     border-color: var(--theme-primary-color) !important;
     box-shadow: 0px 0px 0px 1px var(--theme-primary-color);
@@ -1127,6 +1171,8 @@ select.form-select option[value=""] {
     .feature-grid .details h3 {font-size: 20px;}
     .parallax .section-title h3 {font-size: 18px;}
     .productItem-slider .slide {height: 400px;}
+    .productDetail-slider .productDeatailImage-slider .slide {height: 450px;}
+    .productDetail-slider .productDeatailThumb-slider .slide {height: 48px;margin: 7px;}
     .updateVertical-slider .slide .text-container h5 {font-size: 16px;}
     .updateHorizontal-slider .slide {height: 296px;}
     .is-animated-slider .slide .text-container {padding: 20px 25px;}

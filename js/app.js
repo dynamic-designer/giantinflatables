@@ -10,8 +10,8 @@
 
     // Hero slider background setting
     function sliderBgSetting() {
-        if ($(".hero-slider .slide, .productItem-slider .slide, .updateHorizontal-slider .slide").length) {
-            $(".hero-slider .slide, .productItem-slider .slide, .updateHorizontal-slider .slide").each(function() {
+        if ($(".hero-slider .slide, .productItem-slider .slide, .updateHorizontal-slider .slide, .productDeatailImage-slider .slide, .productDeatailThumb-slider .slide").length) {
+            $(".hero-slider .slide, .productItem-slider .slide, .updateHorizontal-slider .slide, .productDeatailImage-slider .slide, .productDeatailThumb-slider .slide").each(function() {
                 var $this = $(this);
                 var img = $this.find(".slider-bg").attr("src");
 
@@ -85,6 +85,53 @@
                 var goToSingleSlide = $(this).data('slick-index');
            
                 $('.productItem-slider').slick('slickGoTo', goToSingleSlide);
+            });
+        }
+    }
+
+    //Setting Product Detail Slider
+    function productDetailSlider() {
+        if ($(".productDetail-slider").length) {
+            $('.productDeatailImage-slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: false,
+                arrows: true,
+                autoplay: false ,
+                autoplaySpeed: 4000,
+                prevArrow: '<div class="slick-prev slick-btn"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
+                nextArrow: '<div class="slick-next slick-btn"><span class="arrow-icon"><i data-feather="chevron-right"></i></span></div>',
+            });
+           
+            $('.productDeatailThumb-slider')
+                .on('init', function(event, slick) {
+                    $('.productDeatailThumb-slider .slick-slide.slick-current').addClass('is-active');
+                })
+                .slick({
+                    draggable: false,
+                    infinite: false,
+                    slidesToShow: 9,
+                    dots: false,
+                    arrows: true,
+                    autoplay: false,
+                    autoplaySpeed: 4000,
+                    prevArrow: '<div class="slick-prev slick-btn"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
+                    nextArrow: '<div class="slick-next slick-btn"><span class="arrow-icon"><i data-feather="chevron-right"></i></span></div>',
+                });
+           
+            $('.productDeatailImage-slider').on('afterChange', function(event, slick, currentSlide) {
+                $('.productDeatailThumb-slider').slick('slickGoTo', currentSlide);
+                var currrentNavSlideElem = '.productDeatailThumb-slider .slick-slide[data-slick-index="' + currentSlide + '"]';
+                $('.productDeatailThumb-slider .slick-slide.is-active').removeClass('is-active');
+                $(currrentNavSlideElem).addClass('is-active');
+            });
+           
+            $('.productDeatailThumb-slider').on('click', '.slick-slide', function(event) {
+                event.preventDefault();
+                var goToSingleSlide = $(this).data('slick-index');
+           
+                $('.productDeatailImage-slider').slick('slickGoTo', goToSingleSlide);
             });
         }
     }
@@ -253,6 +300,7 @@
         sliderBgSetting();
 
         productSlider();
+        productDetailSlider();
         productNavbarOnlySlider();
         productgridViewSlider();
 
@@ -274,6 +322,18 @@
             e.preventDefault();
             $('html, body').animate({scrollTop:0}, '100');
         });
+
+        var myOffcanvas = document.getElementById('offcanvasWithBothOptions');
+        var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
+
+        $(".slidingMenu").hover(function () {
+            bsOffcanvas.show();
+        });
+        $(".offcanvas-backdrop").hover(function () {
+            alert(1);
+            bsOffcanvas.hide();
+        });
+        
 
     });
 
