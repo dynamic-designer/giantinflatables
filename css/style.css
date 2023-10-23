@@ -381,6 +381,9 @@ select.form-select option[value=""] {
     border-radius: 0;
     padding: 15px 30px;
 }
+.theme-header .header-navbar .offcanvas .navbar-nav .nav-item a svg {
+    vertical-align: top;
+}
 .theme-header .header-navbar .offcanvas.show .navbar-nav .nav-item:nth-child(1) {
     animation: fadeInLeftSlow 0.5s 0.1s forwards;
 }
@@ -1144,6 +1147,9 @@ select.form-select option[value=""] {
 .updateMain-slider .slick-next {
     right: -55px;
 }
+
+#easyToConnectPopup .modal-dialog {max-width: 425px;}
+#easyToConnectPopup .modal-dialog .btn-close {position: absolute;right: 10px;top: 10px;opacity: 1;}
 
 
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
