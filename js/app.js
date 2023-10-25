@@ -54,6 +54,15 @@
                 autoplaySpeed: 4000,
                 prevArrow: '<div class="slick-prev slick-btn"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
                 nextArrow: '<div class="slick-next slick-btn"><span class="arrow-icon"><i data-feather="chevron-right"></i></span></div>',
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                        slidesToShow: 1,
+                        autoplay: true ,
+                        }
+                    }
+                ]
             });
            
             $('.productNavbar-slider')
@@ -184,6 +193,15 @@
                 arrows: true,
                 prevArrow: '<div class="slick-prev slick-btn"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
                 nextArrow: '<div class="slick-next slick-btn"><span class="arrow-icon"><i data-feather="chevron-right"></i></span></div>',
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            asNavFor: '',
+                        }
+                    }
+                ]
             });
         }
     }
@@ -326,15 +344,15 @@
         var myOffcanvas = document.getElementById('offcanvasWithBothOptions');
         var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
 
-        $(".slidingMenu").hover(function () {
-            bsOffcanvas.show();
-        });
-        $(".offcanvas-backdrop").hover(function () {
-            alert(1);
-            bsOffcanvas.hide();
-        });
-        
-
+        if (window.matchMedia('(min-width: 1200px)').matches) {
+            $(".slidingMenu").hover(function () {
+                bsOffcanvas.show();
+            });
+            $(".offcanvas-backdrop").hover(function () {
+                alert(1);
+                bsOffcanvas.hide();
+            });
+        }
     });
 
 
