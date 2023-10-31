@@ -80,6 +80,15 @@
                     autoplaySpeed: 4000,
                     prevArrow: '<div class="slick-prev"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
                     nextArrow: '<div class="slick-next"><span class="arrow-icon"><i data-feather="chevron-right"></i></span></div>',
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                            slidesToShow: 1,
+                            autoplay: true ,
+                            }
+                        }
+                    ]
                 });
            
             $('.productItem-slider').on('afterChange', function(event, slick, currentSlide) {
@@ -238,7 +247,35 @@
         }
     }
     
-
+    function servicesInfoBoxMobileSlider() {
+        if ($(".servicesInfoBoxMobile-slider").length) {
+            $(".servicesInfoBoxMobile-slider").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true ,
+                autoplaySpeed: 4000,
+                infinite: true,
+                arrows: true,
+                prevArrow: '<div class="slick-prev slick-btn"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
+                nextArrow: '<div class="slick-next slick-btn"><span class="arrow-icon"><i data-feather="chevron-right"></i></span></div>',
+            });
+        }
+    }
+    
+    function footerSitemapsMobileSlider() {
+        if ($(".footerSitemapsMobile-slider").length) {
+            $(".footerSitemapsMobile-slider").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true ,
+                autoplaySpeed: 4000,
+                infinite: true,
+                arrows: true,
+                prevArrow: '<div class="slick-prev slick-btn"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
+                nextArrow: '<div class="slick-next slick-btn"><span class="arrow-icon"><i data-feather="chevron-right"></i></span></div>',
+            });
+        }
+    }
     
     function updateDetailSlider() {
         if ($(".updateDetails-slider").length) {
@@ -290,7 +327,17 @@
                 fade: true,
                 infinite: true,
                 arrows: false,
-                dots: false
+                dots: false,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: true,
+                            prevArrow: '<div class="slick-prev slick-btn"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
+                            nextArrow: '<div class="slick-next slick-btn"><span class="arrow-icon"><i data-feather="chevron-right"></i></span></div>',
+                        }
+                    }
+                ]
             });
         }
     }
@@ -353,9 +400,6 @@
 
         caseStudiesSlider();
 
-        //Feather Icon Init
-        feather.replace();
-
         var windowHeight = $(window).outerHeight()
         var headerHeight = $('header').outerHeight();
         $(".hero-slider-wrapper").css("height", (windowHeight - headerHeight)+"px")
@@ -369,14 +413,27 @@
         var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
 
         if (window.matchMedia('(min-width: 1200px)').matches) {
-            $(".slidingMenu").hover(function () {
+            // $(".slidingMenu").hover(function () {
+            //     bsOffcanvas.show();
+            // });
+            $('.slidingMenu').mouseenter(function () {
                 bsOffcanvas.show();
             });
-            $(".offcanvas-backdrop").hover(function () {
-                alert(1);
+         
+            $('.slidingMenu').mouseleave(function () {
                 bsOffcanvas.hide();
-            });
+            }
+            ).mouseleave();
         }
+        
+        if (window.matchMedia('(max-width: 768px)').matches) {
+            servicesInfoBoxMobileSlider();
+            footerSitemapsMobileSlider();
+        }
+
+        //Feather Icon Init
+        feather.replace();
+        
     });
 
 
