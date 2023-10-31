@@ -1304,10 +1304,8 @@ select.form-select option[value=""] {
     .breadcrumb-container .breadcrumb li a svg {width: 18px; margin-right: 0;}
     .productNavbarOnly-slider {padding: 0 30px;}
     .productNavbarOnly-slider .slick-prev,
-    .productgridView-slider .slick-prev,
     .updateMain-slider .slick-prev {left: 0;}
     .productNavbarOnly-slider .slick-next,
-    .productgridView-slider .slick-next,
     .updateMain-slider .slick-next {right: 0;}
     .product-gridView {margin: 20px 0 !important;}
     .product-details .p-4 {padding: 15px !important;}
@@ -1332,4 +1330,8 @@ select.form-select option[value=""] {
     .updateHorizontal-slider .slick-next {right: 10px;}
     .caseStudies-slider .slick-prev {left: 10px; top: 130px;}
     .caseStudies-slider .slick-next {right: 10px; top: 130px;}
+    .productgridView-slider {margin: 0 !important;}
+    .productgridView-slider .slick-slide {margin: 0;}
+    .productgridView-slider .slick-next {right: 5px;}
+    .productgridView-slider .slick-prev {left: 5px;}
 }
