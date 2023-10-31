@@ -277,6 +277,21 @@
         }
     }
     
+    function footerLogosMobileSlider() {
+        if ($(".footerLogosMobile-slider").length) {
+            $(".footerLogosMobile-slider").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true ,
+                autoplaySpeed: 4000,
+                infinite: true,
+                arrows: false,
+                prevArrow: '<div class="slick-prev slick-btn"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
+                nextArrow: '<div class="slick-next slick-btn"><span class="arrow-icon"><i data-feather="chevron-right"></i></span></div>',
+            });
+        }
+    }
+    
     function updateDetailSlider() {
         if ($(".updateDetails-slider").length) {
             $(".updateDetails-slider").slick({
@@ -429,6 +444,7 @@
         if (window.matchMedia('(max-width: 768px)').matches) {
             servicesInfoBoxMobileSlider();
             footerSitemapsMobileSlider();
+            footerLogosMobileSlider();
         }
 
         //Feather Icon Init

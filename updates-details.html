@@ -168,7 +168,7 @@
                 </ol>
                 <a href="#" class="btn btn-secondary btn-withIcon ms-auto">
                   Back
-                  <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+                  <span class="icon"><i data-feather="chevron-right"></i></span>
                 </a>
               </div>
             </div>
@@ -208,11 +208,11 @@
               </div>
             </div>
           </div>
-          <div class="col col-sm-4 is-connectBlock">
+          <div class="col col-sm-4 is-connectBlock mobileMT-5">
             <div class="connect-block wow swing">
               <div class="card card-master">
                 <div class="card-header">
-                  <div class="d-flex">
+                  <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
                       <i data-feather="mail"></i>
                     </div>
@@ -245,8 +245,8 @@
                     <span class="input-group-text" id="">
                       <i data-feather="globe"></i>
                     </span>
-                    <select class="form-select" aria-label="Select Country">
-                      <option disabled selected hidden>Select Country</option>
+                    <select class="form-select" aria-label="Select Country" required>
+                      <option value="" selected>Select Country</option>
                       <option value="1">One</option>
                       <option value="2">Two</option>
                       <option value="3">Three</option>
@@ -289,7 +289,7 @@
                         <div class="text-end">
                           <a href="updates-details.html" class="btn btn-secondary btn-withIcon">
                             View More
-                            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+                            <span class="icon"><i data-feather="chevron-right"></i></span>
                           </a>
                         </div>
                     </div>
@@ -304,7 +304,7 @@
                         <div class="text-end">
                             <a href="updates-details.html" class="btn btn-secondary btn-withIcon">
                             View More
-                            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+                            <span class="icon"><i data-feather="chevron-right"></i></span>
                             </a>
                         </div>
                     </div>
@@ -319,7 +319,7 @@
                         <div class="text-end">
                             <a href="updates-details.html" class="btn btn-secondary btn-withIcon">
                             View More
-                            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+                            <span class="icon"><i data-feather="chevron-right"></i></span>
                             </a>
                         </div>
                     </div>
@@ -330,14 +330,14 @@
 
     <section class="section-box parallax" data-bg-image="images/slider/slide-2.jpg">
       <div class="container container-large position-relative">
-        <div class="row">
+        <div class="row servicesInfoBoxMobile-slider">
             <div class="col-sm-4">
                 <div class="feature-grid wow zoomIn">
                     <div class="icon">
                         <i data-feather="mail"></i>
                     </div>
                     <div class="details">
-                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <h3>Can I customize my Inflatables?</h3>
                         <p>Sed quia non numquam eius modi tempo ra incidunt ut labore et dolore magnam aliq uam quaera.</p>
                     </div>
                 </div>
@@ -348,7 +348,7 @@
                       <i data-feather="mail"></i>
                     </div>
                     <div class="details">
-                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <h3>Is it safe for all ages?</h3>
                         <p>Sed quia non numquam eius modi tempo ra incidunt ut labore et dolore magnam aliq uam quaera.</p>
                     </div>
                 </div>
@@ -359,14 +359,14 @@
                       <i data-feather="mail"></i>
                     </div>
                     <div class="details">
-                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <h3>How about delivery and set-up?</h3>
                         <p>Sed quia non numquam eius modi tempo ra incidunt ut labore et dolore magnam aliq uam quaera.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="">
-          <div class="d-flex align-items-center mt-3">
+        <div>
+          <div class="d-flex align-items-center mt-3 hideInMobile">
             <div class="section-title m-0">
               <h3 class="text-primary m-0">Sed quia non numquam eius modi tempo ra incidunt ut labore et dolore magnam aliq uam quaera.</h3>
             </div>
@@ -384,7 +384,7 @@
           <div class="section-title mb-2">
             <h2>Industrial <span>Inflatable</span> Products</h2>
           </div>
-          <div class="ms-auto">
+          <div class="ms-auto hideInMobile">
             <a href="#" class="btn btn-secondary btn-withIcon">
               Main Categories
               <span class="icon"><i data-feather="chevron-right"></i></span>
@@ -552,15 +552,13 @@
           </div>
         </div>
       </div>
-      <div class="text-center mt-4 mb-1 showInMobile">
+      <div class="text-center mt-4 mb-1">
         <button class="btn btn-secondary btn-withIcon" type="submit">
           Main Categories
           <span class="icon"><i data-feather="chevron-right"></i></span>
         </button>
       </div>
     </section>
-
-    
 
     <section class="section-box">
       <div class="container container-large">
@@ -623,7 +621,7 @@
             <div class="connect-block wow swing">
               <div class="card card-master">
                 <div class="card-header">
-                  <div class="d-flex">
+                  <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
                       <i data-feather="mail"></i>
                     </div>
@@ -741,7 +739,7 @@
       </div>
       <div class="footer-standard">
         <div class="container container-extraLarge">
-          <div class="row align-items-end">
+          <div class="row align-items-end footerLogosMobile-slider">
             <div class="col col-sm-3">
               <h5 class="text-light">This website is powered by:</h5>
               <img class="img-md" src="images/logo.png" />

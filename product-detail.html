@@ -165,7 +165,7 @@
               <div class="d-flex align-items-center">
                 <ol class="breadcrumb m-0">
                   <li><a href="index.html"><i data-feather="home"></i> Home</a></li>
-                  <li class="hideInMobile"><a href="products.html">Industrial Inflatable Products</a></li>
+                  <li class=""><a href="products.html">Industrial Inflatable Products</a></li>
                   <li><a class="text-primary text-truncate">Industrial Pipe Plug</a></li>
                 </ol>
                 <a href="#" class="btn btn-secondary btn-withIcon ms-auto">
@@ -196,8 +196,73 @@
             </a>
           </div>
         </div>
-
-        <div class="product-slider mb-5">
+        <div class="showInMobile">
+          <div class="collapsingMobileMenu mb-3">
+            <button class="btn btn-secondary btn-withIcon m-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSubProductList" aria-expanded="false" aria-controls="collapseExample">
+              Industrial Pipe Plug Solution
+              <span class="icon"><i data-feather="chevron-right"></i></span>
+            </button>
+            <div class="collapse" id="collapseSubProductList">
+              <div class="card card-body">
+                <div class="list-group list-group-flush">
+                  <a href="#" class="list-group-item list-group-item-action active">
+                    <span class="icon"><i data-feather="chevron-right"></i></span>
+                    Product 1
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="icon"><i data-feather="chevron-right"></i></span>
+                    Product 2
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="icon"><i data-feather="chevron-right"></i></span>
+                    Product 3
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="icon"><i data-feather="chevron-right"></i></span>
+                    Product 4
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="icon"><i data-feather="chevron-right"></i></span>
+                    Product 5
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collapsingMobileMenu mb-5">
+            <button class="btn btn-secondary btn-withIcon m-0 ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProductList" aria-expanded="false" aria-controls="collapseExample">
+              Main Categories
+              <span class="icon"><i data-feather="chevron-right"></i></span>
+            </button>
+            <div class="collapse" id="collapseProductList">
+              <div class="card card-body">
+                <div class="list-group list-group-flush">
+                  <a href="#" class="list-group-item list-group-item-action active">
+                    <span class="icon"><i data-feather="chevron-right"></i></span>
+                    Product 1
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="icon"><i data-feather="chevron-right"></i></span>
+                    Product 2
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="icon"><i data-feather="chevron-right"></i></span>
+                    Product 3
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="icon"><i data-feather="chevron-right"></i></span>
+                    Product 4
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="icon"><i data-feather="chevron-right"></i></span>
+                    Product 5
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-slider mb-5 hideInMobile">
           <div class="productNavbarOnly-slider navbar-nav mb-3">
             <div class="nav-item is-active">
               <a class="nav-link">Product Category 1</a>
@@ -231,13 +296,13 @@
             </div>
           </div>
         </div>
-
-        
         <div class="section-title is-center mb-2">
           <h2>Industrial <span>Pipe Plug</span> Solution</h2>
         </div>
-
-        <div class="product-slider mb-5">
+        <div class="showInMobile">
+          <span class="categoryTitle text-uppercase mb-4">Low Pressure Isolation Plug</span>
+        </div>
+        <div class="product-slider mb-5 hideInMobile">
           <div class="productNavbarOnly-slider is-capsuleUI navbar-nav mb-3">
             <div class="nav-item is-active">
               <a class="nav-link">Sub Product 1</a>
@@ -358,7 +423,7 @@
             <div class="connect-block">
               <div class="card card-master">
                 <div class="card-header">
-                  <div class="d-flex">
+                  <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
                       <i data-feather="mail"></i>
                     </div>
@@ -418,7 +483,7 @@
         </div>
         <div class="product-details">
             <div class="section-title has-noElement mb-2">
-              <h2 class="p-0 text-capitalize">Product <span>Description</span></h2>
+              <h2 class="p-0 text-capitalize"><span>Product</span>Description</h2>
             </div>
             <div class="border border-dark-subtle rounded p-4 pb-2 text-dark wow fadeInUp">
               <h4>Heading</h4>
@@ -431,7 +496,7 @@
       </div>
     </section>
     
-    <section class="section-box">
+    <section class="section-box mobilePT-0">
       <div class="container container-extraLarge">
         <div class="d-flex">
           <div class="section-title mb-2">
@@ -619,7 +684,7 @@
           <div class="ms-auto">
             <a href="#" class="btn btn-secondary btn-withIcon">
               View More
-              <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+              <span class="icon"><i data-feather="chevron-right"></i></span>
             </a>
           </div>
         </div>
@@ -731,7 +796,7 @@
                 <div class="text-end">
                   <a href="#" class="btn btn-secondary btn-withIcon">
                   View More
-                  <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+                  <span class="icon"><i data-feather="chevron-right"></i></span>
                 </a>
                 </div>
               </div>
@@ -750,7 +815,7 @@
                 <div class="text-end">
                   <a href="#" class="btn btn-secondary btn-withIcon">
                   View More
-                  <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+                  <span class="icon"><i data-feather="chevron-right"></i></span>
                 </a>
                 </div>
               </div>
@@ -769,7 +834,7 @@
                 <div class="text-end">
                   <a href="#" class="btn btn-secondary btn-withIcon">
                   View More
-                  <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+                  <span class="icon"><i data-feather="chevron-right"></i></span>
                 </a>
                 </div>
               </div>
@@ -840,7 +905,7 @@
             <div class="connect-block wow swing">
               <div class="card card-master">
                 <div class="card-header">
-                  <div class="d-flex">
+                  <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
                       <i data-feather="mail"></i>
                     </div>
@@ -958,7 +1023,7 @@
       </div>
       <div class="footer-standard">
         <div class="container container-extraLarge">
-          <div class="row align-items-end">
+          <div class="row align-items-end footerLogosMobile-slider">
             <div class="col col-sm-3">
               <h5 class="text-light">This website is powered by:</h5>
               <img class="img-md" src="images/logo.png" />
