@@ -307,7 +307,7 @@ select.form-select option[value=""] {
     border-radius: var(--theme-base-border-radius);
     color: var(--theme-base-gray-900);
     font-weight: 500;
-    padding: 12px 15px;
+    padding: 12px 15px 10px;
     position: relative;
     transition: all 2s;
     text-transform: uppercase;
