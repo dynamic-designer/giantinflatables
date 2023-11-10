@@ -425,7 +425,7 @@
             <div class="col-sm-4">
                 <div class="feature-grid wow zoomIn">
                     <div class="icon">
-                        <i data-feather="mail"></i>
+                        <i data-feather="settings"></i>
                     </div>
                     <div class="details">
                         <h3>Can I customize my Inflatables?</h3>
@@ -436,7 +436,7 @@
             <div class="col-sm-4">
                 <div class="feature-grid wow zoomIn">
                     <div class="icon">
-                      <i data-feather="mail"></i>
+                      <i data-feather="shield"></i>
                     </div>
                     <div class="details">
                         <h3>Is it safe for all ages?</h3>
@@ -447,7 +447,7 @@
             <div class="col-sm-4">
                 <div class="feature-grid wow zoomIn">
                     <div class="icon">
-                      <i data-feather="mail"></i>
+                      <i data-feather="truck"></i>
                     </div>
                     <div class="details">
                         <h3>How about delivery and set-up?</h3>
@@ -769,40 +769,7 @@
   <script src="js/app.js"></script>
   <script>
     $(document).ready(function(){
-    
       new WOW().init();
-
-      var didScroll;
-      var lastScrollTop = 0;
-      var delta = 5;
-      var headerHeight = $('header').outerHeight();
-      var topNavHeight = $('.header-topbar').outerHeight();
-      var headerMainHeight = $('.header-navbar').outerHeight();
-      $(window).scroll(function(event){
-          didScroll = true;
-      });
-      setInterval(function() {
-          if (didScroll) {hasScrolled();didScroll = false;}
-      }, 250);
-      function hasScrolled() {
-          var st = $(this).scrollTop();
-          if(Math.abs(lastScrollTop - st) <= delta)
-              return;
-          if (st > lastScrollTop && st > headerHeight){
-              // Scroll Down
-              $('header').removeClass('fixed-down').addClass('fixed-up');
-              $('.fixed-up').css('top', -(topNavHeight + headerMainHeight));
-          } else {
-              // Scroll Up
-              $('.fixed-up').css('top', '0');
-              if(st + $(window).height() < $(document).height()) {
-                  $('header').removeClass('fixed-up').addClass('fixed-down');
-              }
-          }
-          lastScrollTop = st;
-      };
-      $('body').css('padding-top', headerHeight);
-
     })
   </script>
 </body>

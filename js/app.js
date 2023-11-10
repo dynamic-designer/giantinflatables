@@ -47,10 +47,10 @@
             $('.productItem-slider').slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                infinite: false,
+                infinite: true,
                 dots: false,
                 arrows: true,
-                autoplay: true ,
+                autoplay: false ,
                 autoplaySpeed: 4000,
                 prevArrow: '<div class="slick-prev slick-btn"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
                 nextArrow: '<div class="slick-next slick-btn"><span class="arrow-icon"><i data-feather="chevron-right"></i></span></div>',
@@ -71,12 +71,12 @@
                 })
                 .slick({
                     draggable: false,
-                    infinite: false,
+                    infinite: true,
                     variableWidth: true,
                     slidesToShow: 6,
                     dots: false,
                     arrows: true,
-                    autoplay: true ,
+                    autoplay: false ,
                     autoplaySpeed: 4000,
                     prevArrow: '<div class="slick-prev"><span class="arrow-icon"><i data-feather="chevron-left"></i></span></div>',
                     nextArrow: '<div class="slick-next"><span class="arrow-icon"><i data-feather="chevron-right"></i></span></div>',
@@ -417,7 +417,11 @@
 
         var windowHeight = $(window).outerHeight()
         var headerHeight = $('header').outerHeight();
-        $(".hero-slider-wrapper").css("height", (windowHeight - headerHeight)+"px")
+        var connectBlockHeight = $('.getHeightOfBlock').outerHeight();
+        var sectionHeadingHeight = $('.sectionHeadingHeight').outerHeight();
+
+        $(".hero-slider-wrapper").css("height", (windowHeight - headerHeight)+"px");
+        $("body").css("padding-top", headerHeight + "px");
 
         backToTopBtn.on('click', function(e) {
             e.preventDefault();
@@ -439,6 +443,12 @@
                 bsOffcanvas.hide();
             }
             ).mouseleave();
+
+            $(".applyHeightOfBlock").css("height", (connectBlockHeight - sectionHeadingHeight - 107) + "px");
+        }
+
+        if (window.matchMedia('(min-width: 1400px)').matches) {
+            $(".applyHeightOfBlock").css("height", (connectBlockHeight - sectionHeadingHeight - 115) + "px");
         }
         
         if (window.matchMedia('(max-width: 768px)').matches) {
@@ -446,6 +456,8 @@
             footerSitemapsMobileSlider();
             footerLogosMobileSlider();
         }
+
+        
 
         //Feather Icon Init
         feather.replace();
