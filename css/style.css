@@ -1195,7 +1195,7 @@ select.form-select option[value=""] {
     .theme-header .header-topbar .site-logo img {height: 70px;}
     .theme-header .header-navbar .navbar {padding: 5px 6px 5px 100px;}
     .theme-header .header-navbar .navbar .btn-dark {height: 50px;}
-    .theme-header .header-navbar .navbar-nav .nav-item .nav-link {padding: 10px 15px 8px;}
+    .theme-header .header-navbar .navbar-nav .nav-item .nav-link {padding: 10px 15px 8px;height: 40px;}
     .theme-header .header-navbar .offcanvas,
     .theme-header.fixed-down .header-navbar .offcanvas {top: 150px;}
     .section-title h2 {font-size: 28px;}
