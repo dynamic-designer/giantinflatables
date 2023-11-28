@@ -439,10 +439,20 @@
                 bsOffcanvas.show();
             });
          
-            $('.slidingMenu').mouseleave(function () {
+            // $('.slidingMenu').mouseleave(function () {
+            //     bsOffcanvas.hide();
+            // }
+            // ).mouseleave();
+
+            var timer;
+            $(".slidingMenu, #offcanvasWithBothOptions").mouseleave(function() {
+                timer = setTimeout(hideOffcanvasMenu, 10);
+            }).mouseenter(function() {
+                clearTimeout(timer);
+            });
+            function hideOffcanvasMenu() {
                 bsOffcanvas.hide();
             }
-            ).mouseleave();
 
             $(".applyHeightOfBlock").css("height", (connectBlockHeight - sectionHeadingHeight - 107) + "px");
         }
