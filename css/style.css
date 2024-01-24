@@ -343,6 +343,11 @@ select.form-select option[value=""] {
     animation: fill 0.3s forwards;
     opacity: 1;
 }
+.theme-header .header-navbar .navbar-nav .nav-item .nav-link .feather {
+    margin-right: 5px;
+    position: relative;
+    top: -1px;
+}
 .theme-header .header-navbar .offcanvas {
     background-color: var(--bs-offcanvas-bg) !important;
     background-clip: padding-box;  
@@ -374,7 +379,8 @@ select.form-select option[value=""] {
 .theme-header .header-navbar .offcanvas-backdrop.show {
     opacity: 0;
 }
-.theme-header .header-navbar .offcanvas .navbar-nav .nav-item {
+.theme-header .header-navbar .offcanvas .navbar-nav .nav-item,
+.theme-header .header-navbar .offcanvas .card {
     opacity: 0;
 }
 .theme-header .header-navbar .offcanvas .navbar-nav .nav-item a {
@@ -415,6 +421,26 @@ select.form-select option[value=""] {
 }
 .theme-header .header-navbar .offcanvas.show .navbar-nav .nav-item:nth-child(10) {
     animation: fadeInLeftSlow 0.5s 1s forwards;
+}
+.theme-header .header-navbar .offcanvas.show .card {
+    animation: fadeInLeftSlow 0.5s 1.1s forwards;
+}
+.theme-header .header-navbar .offcanvas .offcanvas-body .card.card-master {
+    margin-top: 50px;
+}
+.theme-header .header-navbar .offcanvas .offcanvas-body .card.card-master .card-header {
+    padding: 10px;
+}
+.theme-header .header-navbar .offcanvas .offcanvas-body .card.card-master .card-header .feather {
+    height: 30px;
+    width: 30px;
+    stroke-width: 1.5px;
+}
+.theme-header .header-navbar .offcanvas .offcanvas-body .card.card-master .card-header h4 {
+    font-size: 20px;
+}
+.theme-header .header-navbar .offcanvas .offcanvas-body .card.card-master .card-body .input-group .input-group-text {
+    padding-left: 0;
 }
 /* Keyframes */
 @keyframes fill {
@@ -665,6 +691,7 @@ select.form-select option[value=""] {
     margin: 0 0 15px 0;
     padding-bottom: 0.5em;
     position: relative;
+    transition: all 0.3s;
 }
 .section-title h2:before {
     content: "";
@@ -675,6 +702,7 @@ select.form-select option[value=""] {
     left: 0;
     bottom: 0;
     border-radius: var(--theme-base-border-radius);
+    transition: all 0.3s;
 }
 .section-title h2 span {
     color: var(--theme-primary-color);
@@ -695,6 +723,12 @@ select.form-select option[value=""] {
     left: 52%;
     transform: translateX(-50%);
     width: 34%;
+}
+.section-title:hover h2 {
+    color: var(--theme-primary-color);
+}
+.section-title:hover h2:before {
+    background-color: var(--theme-secondary-color);
 }
 
 .breadcrumb-container .breadcrumb {
@@ -939,6 +973,9 @@ select.form-select option[value=""] {
 }
 
 
+.is-animated-slider .slide {
+    cursor: pointer;
+}
 .is-animated-slider .slide::before {
     content: "";
     position: absolute;
@@ -973,7 +1010,8 @@ select.form-select option[value=""] {
     width: 172px;
 }
 .product-gridView .is-animated-slider .slide::before {
-    background: linear-gradient(0deg, var(--theme-secondary-color), transparent);
+    /* background: linear-gradient(0deg, var(--theme-secondary-color), transparent); */
+    background: transparent;
 }
 .product-gridView .is-animated-slider .slide:hover:before {
     opacity: 1;
@@ -981,17 +1019,31 @@ select.form-select option[value=""] {
 .product-gridView .is-animated-slider .slide:hover .text-container {
     background-color: transparent;
 }
+.product-gridView .is-animated-slider .slide .text-container::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -300px;
+    transition: all 0.27s;
+}
 .product-gridView .is-animated-slider .slide .text-container .btns {
     opacity: 0;
 }
+.product-gridView .is-animated-slider .slide:hover .text-container::before {
+    bottom: 0;
+}
 .product-gridView .is-animated-slider .slide:hover .text-container .btns {
-    animation: fadeInRight 0.2s 0.1s forwards;
+    animation: fadeInUp 0.2s 0.1s forwards;
 }
 .product-gridView .is-animated-slider .slide .text-container {
     background-color: transparent;
 }
 .product-gridView .is-animated-slider .slide .text-container .slide-caption .heading {
     text-shadow: 2px 2px 6px #000;
+    position: relative;
 }
 
 .productDetail-slider .productDeatailImage-slider .slick-prev {
@@ -1038,9 +1090,30 @@ select.form-select option[value=""] {
     margin: 10px;
 }
 
+.updates-gridView .slide {
+    cursor: pointer;
+}
 .updates-gridView .slide:hover {
     border-color: var(--theme-primary-color) !important;
     box-shadow: 0px 0px 0px 1px var(--theme-primary-color);
+}
+.updates-gridView .slide h4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.25em;
+    min-height: 2.5em;
+}
+.updates-gridView .slide p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height:1.5em;
+    min-height:4.5em;
 }
 
 .parallax {
@@ -1178,8 +1251,11 @@ select.form-select option[value=""] {
 
 #easyToConnectPopup .modal-dialog {max-width: 425px;}
 #easyToConnectPopup .modal-dialog .btn-close {position: absolute;right: 10px;top: 10px;opacity: 1;}
+.navbar-expand-lg .offcanvas .offcanvas-body {overflow-y: auto;}
 
-
+@media screen and (min-width: 1600px) {
+    .theme-header .header-navbar .navbar-collapse .navbar-nav {gap: 3rem !important;}
+}
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
     :root {
         --theme-base-btn-padding: 4px 15px 4px 15px;
