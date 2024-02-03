@@ -984,7 +984,7 @@ select.form-select option[value=""] {
 .is-animated-slider .slide {
     cursor: pointer;
 }
-.is-animated-slider .slide::before {
+/* .is-animated-slider .slide::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -995,7 +995,7 @@ select.form-select option[value=""] {
 }
 .is-animated-slider .slide:hover::before {
     opacity: 0;
-}
+} */
 .is-animated-slider .slide:hover .text-container,
 .product-gridView .is-animated-slider .slide .text-container {
     bottom: 0;
