@@ -117,7 +117,7 @@
             $('.productDeatailImage-slider').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                infinite: false,
+                infinite: true,
                 dots: false,
                 arrows: true,
                 autoplay: true ,
@@ -171,7 +171,7 @@
         if ($(".productNavbarOnly-slider").length) {
             $(".productNavbarOnly-slider").slick({
                 draggable: false,
-                infinite: false,
+                infinite: true,
                 variableWidth: true,
                 slidesToShow: 6,
                 dots: false,
