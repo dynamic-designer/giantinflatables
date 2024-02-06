@@ -908,7 +908,7 @@ select.form-select option[value=""] {
 .product-slider .productNavbarOnly-slider:not(.is-capsuleUI) .nav-link {padding: 10px 0;}
 .product-slider .productNavbarOnly-slider:not(.is-capsuleUI) .nav-item {margin: 0 12px;}
 .product-slider .productNavbarOnly-slider:not(.is-capsuleUI) .nav-item::after {right: -12px}
-.product-slider .productNavbar-slider .nav-link {padding: 10px 0 !important;}
+.product-slider .productNavbar-slider .nav-link {padding: 10px 0 8px !important;}
 .product-slider .productNavbar-slider .nav-item {margin: 0 15px !important;}
 .product-slider .productNavbar-slider .nav-item::after {right: -15px}
 .productNavbar-slider .nav-item,
@@ -939,6 +939,29 @@ select.form-select option[value=""] {
     padding: 8px 12px;
     margin: 0 10px;
     text-transform: uppercase;
+    position: relative;
+}
+.productNavbar-slider .nav-item .nav-link::after,
+.productNavbarOnly-slider:not(.is-capsuleUI) .nav-item .nav-link::after {
+    content: "";
+    background-color: var(--theme-primary-color);
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: calc(100% + 20px);
+    height: 100%;
+    z-index: -1;
+    border-radius: var(--theme-base-border-radius);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.productNavbar-slider .nav-item:not(.is-active):hover .nav-link::after,
+.productNavbarOnly-slider:not(.is-capsuleUI) .nav-item:not(.is-active):hover .nav-link::after {
+    opacity: 1;
+}
+.productNavbar-slider .nav-item:hover .nav-link,
+.productNavbarOnly-slider .nav-item:hover .nav-link {
+    color: var(--theme-base-black);
 }
 .productNavbar-slider .nav-item.is-active .nav-link,
 .productNavbarOnly-slider .nav-item.is-active .nav-link {
