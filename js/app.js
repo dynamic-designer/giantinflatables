@@ -10,8 +10,8 @@
 
     // Hero slider background setting
     function sliderBgSetting() {
-        if ($(".hero-slider .slide, .productItem-slider .slide, .productDeatailImage-slider .slide, .productDeatailThumb-slider .slide").length) {
-            $(".hero-slider .slide, .productItem-slider .slide, .productDeatailImage-slider .slide, .productDeatailThumb-slider .slide").each(function() {
+        if ($(".hero-slider .slide, .productItem-slider .slide, .updateHorizontal-slider .slide, .productDeatailImage-slider .slide, .productDeatailThumb-slider .slide").length) {
+            $(".hero-slider .slide, .productItem-slider .slide, .updateHorizontal-slider .slide, .productDeatailImage-slider .slide, .productDeatailThumb-slider .slide").each(function() {
                 var $this = $(this);
                 var img = $this.find(".slider-bg").attr("src");
 
@@ -207,7 +207,7 @@
             $(".updateHorizontal-slider").slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                autoplay: true ,
+                autoplay: true,
                 autoplaySpeed: 4000,
                 infinite: true,
                 asNavFor: '.updateVertical-slider',
