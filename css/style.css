@@ -488,12 +488,19 @@ select.form-select option[value=""] {
     background-image: url('../images/footer.jpg');
     background-position: center center;
     background-size: cover;
-    padding: 50px 0;
+    padding: 25px 0;
 }
-
-.theme-footer .footer-standard .img-lg {width: 300px;}
-.theme-footer .footer-standard .img-md {width: 250px;}
-.theme-footer .footer-standard .img-sm {width: 150px;}
+.theme-footer .footer-standard .background-footer-logo {
+    background-color: white;
+    padding: 15px;
+    border-radius: 25px;
+}
+.theme-footer .footer-standard .dmca-logo {
+    height: 30px;
+    display: block;
+    margin-left: auto;
+}
+.theme-footer .footer-standard .img-md {height: 125px;}
 
 /*--------------------------------------------------------------
 #0.4    hero slider
@@ -1359,6 +1366,7 @@ select.form-select option[value=""] {
     .theme-header .header-navbar .offcanvas .navbar-nav .nav-item .nav-link {height: auto;}
     .theme-header .header-navbar .offcanvas,
     .theme-header.fixed-down .header-navbar .offcanvas {top: 150px;}
+    .theme-header .header-navbar .navbar-nav .nav-item .nav-link .feather {top: -2px;}
     .section-title h2 {font-size: 28px;}
     .hero-slider-wrapper .hero-slider .slide-caption>h1 {font-size: 64px;}
     .hero-slider-wrapper .hero-slider .slide-caption>h2 {font-size: 32px;}
@@ -1380,9 +1388,6 @@ select.form-select option[value=""] {
     .card.card-master .card-header {padding: 10px 40px;}
     .theme-footer .footer-standard h4 {font-size: 18px;}
     .theme-footer .footer-standard h5 {font-size: 16px;}
-    .theme-footer .footer-standard .img-lg {width: 250px;}
-    .theme-footer .footer-standard .img-md {width: 200px;}
-    .theme-footer .footer-standard .img-sm {width: 100px;}
     .page-title .background-container {height: 250px;}
     .page-title h1 {font-size: 42px;}
     .page-title h3 {font-size: 24px;}
