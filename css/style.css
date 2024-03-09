@@ -490,11 +490,6 @@ select.form-select option[value=""] {
     background-size: cover;
     padding: 25px 0;
 }
-.theme-footer .footer-standard .background-footer-logo {
-    background-color: white;
-    padding: 15px;
-    border-radius: 25px;
-}
 .theme-footer .footer-standard .dmca-logo {
     height: 30px;
     display: block;
