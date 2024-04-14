@@ -95,19 +95,19 @@
                     ]
                 });
            
-            $('.productItem-slider').on('afterChange', function(event, slick, currentSlide) {
-                $('.productNavbar-slider').slick('slickGoTo', currentSlide);
-                var currrentNavSlideElem = '.productNavbar-slider .slick-slide[data-slick-index="' + currentSlide + '"]';
-                $('.productNavbar-slider .slick-slide.is-active').removeClass('is-active');
-                $(currrentNavSlideElem).addClass('is-active');
-            });
+            // $('.productItem-slider').on('afterChange', function(event, slick, currentSlide) {
+            //     $('.productNavbar-slider').slick('slickGoTo', currentSlide);
+            //     var currrentNavSlideElem = '.productNavbar-slider .slick-slide[data-slick-index="' + currentSlide + '"]';
+            //     $('.productNavbar-slider .slick-slide.is-active').removeClass('is-active');
+            //     $(currrentNavSlideElem).addClass('is-active');
+            // });
            
-            $('.productNavbar-slider').on('click', '.slick-slide', function(event) {
-                event.preventDefault();
-                var goToSingleSlide = $(this).data('slick-index');
+            // $('.productNavbar-slider').on('click', '.slick-slide', function(event) {
+            //     event.preventDefault();
+            //     var goToSingleSlide = $(this).data('slick-index');
            
-                $('.productItem-slider').slick('slickGoTo', goToSingleSlide);
-            });
+            //     $('.productItem-slider').slick('slickGoTo', goToSingleSlide);
+            // });
         }
     }
 
@@ -483,7 +483,7 @@
             $(".applyHeightOfBlock").css("height", (connectBlockHeight - sectionHeadingHeight - 115) + "px");
         }
         
-        if (window.matchMedia('(max-width: 768px)').matches) {
+        if (window.matchMedia('(max-width: 1024px)').matches) {
             servicesInfoBoxMobileSlider();
             footerSitemapsMobileSlider();
             footerLogosMobileSlider();
