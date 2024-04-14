@@ -1410,7 +1410,25 @@ select.form-select option[value=""] {
     .card.card-master .card-header .feather {height: 40px;width: 40px;}
     .card.card-master .card-header {padding: 10px 40px;}
     .theme-footer .footer-standard h4 {font-size: 18px;}
-    .theme-footer .footer-standard h5 {font-size: 16px;}
+    .theme-footer .footer-standard h5 {font-size: 15px;}
+    .theme-footer .footer-standard .text-big {
+        font-size: 20px;
+    }
+    .theme-footer .footer-standard .img-md {
+        height: 100px;
+    }
+    .theme-footer .footer-standard .logo-2 {
+        height: 162px !important;
+    }
+    .theme-footer .footer-standard .logo-3 {
+        height: 192px !important;
+    }
+    .theme-footer .footer-standard .flink {
+        font-size: 18px;
+    }
+    .theme-footer .footer-standard .flink3 {
+        margin-top: 18px;
+    }
     .page-title .background-container {height: 250px;}
     .page-title h1 {font-size: 42px;}
     .page-title h3 {font-size: 24px;}
