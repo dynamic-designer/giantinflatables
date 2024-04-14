@@ -488,6 +488,11 @@ select.form-select option[value=""] {
     color: var(--theme-base-white);
     text-decoration: none;
 }
+.theme-footer .footer-sitemap .sitemap-links-widget ul li a .feather {
+    width: 20px;
+    margin-top: -3px;
+    margin-right: 2px;
+}
 .theme-footer .footer-standard {
     background-image: url('../images/footer.jpg');
     background-position: center center;
